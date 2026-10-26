@@ -382,3 +382,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 }
 .facts dd{margin:0;flex:1 1 200px;font-size:1rem;color:var(--ink)}
 @media (max-width:520px){.facts dt{flex-basis:100%}}
+
+/* ---------- hero ikinci paragraf ---------- */
+.lede strong{font-weight:600;color:var(--ink)}
+.lede-2{margin-top:-2px}
