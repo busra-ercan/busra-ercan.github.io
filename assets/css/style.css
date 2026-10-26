@@ -303,3 +303,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
   .schematic svg .sch-lab{display:none}
   .sch-legend{display:block}
 }
+
+/* ---------- proje içi uygulama notu ---------- */
+.appnote{border:1px solid var(--line);background:var(--surface-2);padding:20px 22px;margin-top:26px}
+.appnote h4{margin-bottom:6px}
+.appnote .did{margin-top:4px}
+.appnote strong{font-weight:600;color:var(--ink)}

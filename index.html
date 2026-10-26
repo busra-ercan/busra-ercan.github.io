@@ -145,9 +145,9 @@
         <h3><span class="tr">İkinci El Araç Fiyat Tahmini</span><span class="en">Used Car Price Prediction</span></h3>
         <span class="domain tr">regresyon · otomotiv</span><span class="domain en">regression · automotive</span>
       </div>
-      <p class="muted small" style="max-width:66ch">
-        <span class="tr">Birleşik Krallık ikinci el araç ilanları. Bir araç ilana çıkmadan önce piyasa fiyatı ne olmalı?</span>
-        <span class="en">UK used-car listings. What should a vehicle be priced at before it goes live?</span>
+      <p class="muted small" style="max-width:68ch">
+        <span class="tr">İkinci el bir araba satışa çıkarken herkes aynı şeyi yapıyor: benzer ilanlara bakıp bir fiyat tutturmaya çalışıyor. Yüksek koyarsan ilan aylarca bekliyor, düşük koyarsan para masada kalıyor. Bu model aracın yaşına, kilometresine, motoruna ve donanımına bakıp piyasanın gerçekte o araca ne ödediğini söylüyor — Birleşik Krallık’taki gerçek ilan geçmişinden öğrenerek.</span>
+        <span class="en">Everyone prices a used car the same way: scroll through similar ads and guess. Price it high and the listing sits for months; price it low and you leave money on the table. This model looks at a car’s age, mileage, engine and trim and tells you what the market actually pays for it, learned from real UK listing history.</span>
       </p>
 
       <div class="metrics">
@@ -197,6 +197,22 @@
           <figcaption><span class="tr">Kehribar renkli çubuk, son olarak seçtiğim model. Optuna optimizasyonu RMSE'yi £53 daha düşürdü — küçük ama doğrulama setinde tutarlı bir kazanç.</span><span class="en">The amber bar is the model I shipped. Optuna tuning took a further £53 off RMSE — small, but consistent across validation folds.</span></figcaption>
         </figure>
       </div>
+
+      <div class="appnote">
+        <h4><span class="tr">Modeli notebook’ta bırakmadım</span><span class="en">I did not leave the model in the notebook</span></h4>
+        <p class="small muted" style="max-width:68ch;margin-bottom:12px">
+          <span class="tr">Eğitilen modeli, fiyat merak eden birinin gerçekten kullanabileceği bir arayüze taşıdım. Aynı özellik mühendisliği tahmin anında da çalışıyor — arayüzden çıkan sonuçla eğitimdeki mantık birebir aynı.</span>
+          <span class="en">I moved the trained model into an interface someone actually asking about a price could use. The same feature engineering runs at prediction time, so what the interface returns comes from exactly the logic the model was trained on.</span>
+        </p>
+        <ul class="did">
+          <li><span class="tr"><strong>Tek sayı yerine üç çıktı:</strong> tahmin, pratik aralık (±MAE) ve ayrı eğitilmiş kuantil modellerinden gelen %10–%90 bandı. Tahmin bandın dışına taşarsa içine çekiliyor. Birine “bu araç £12.400 eder” demek yanıltıcı; “£10.600–£14.200 arası” demek dürüst.</span><span class="en"><strong>Three outputs instead of one:</strong> the estimate, a practical ±MAE range, and a 10–90% band from separately trained quantile models. If the estimate falls outside the band it is pulled back in. Telling someone "this car is worth £12,400" is misleading; "between £10,600 and £14,200" is honest.</span></li>
+          <li><span class="tr"><strong>Senaryo analizi:</strong> kilometre, model yılı ve motor hacmi için diğer her şeyi sabit tutup fiyatın nasıl değiştiğini çiziyor. “Bir yıl daha bekletirsem ne kaybederim?” sorusunun cevabı burada.</span><span class="en"><strong>Scenario analysis:</strong> for mileage, model year and engine size it holds everything else fixed and plots how the price responds. This is where "what do I lose if I wait another year?" gets answered.</span></li>
+          <li><span class="tr"><strong>Dağılım dışı uyarısı:</strong> girilen kilometre o marka, model ve yıl için veride görülen aralığın dışındaysa uyarı çıkıyor. Model eğitim dağılımının dışında güvenilir değil ve bunu kullanıcıdan saklamamak gerekiyor.</span><span class="en"><strong>Out-of-distribution warning:</strong> if the entered mileage sits outside the range seen for that make, model and year, the app says so. A model is not reliable beyond its training distribution, and the user should not have to guess that.</span></li>
+          <li><span class="tr">Varsayılan aralıklar sabit değil; veri setinin kendisinden hesaplanıyor (ilgili dilimde yıllık kilometrenin %10–%90 aralığı).</span><span class="en">The default ranges are not hard-coded; they are computed from the dataset itself (the 10–90% band of annual mileage for the relevant slice).</span></li>
+        </ul>
+        <div class="stack"><span>Streamlit</span><span>LightGBM</span><span>joblib</span><span>scikit-learn</span><span class="tr">kuantil regresyon</span><span class="en">quantile regression</span></div>
+        <div class="links"><a href="https://github.com/busra-ercan/my_streamlit" target="_blank" rel="noopener"><span class="tr">Uygulama kodu ↗</span><span class="en">App source ↗</span></a></div>
+      </div>
     </article>
 
     <!-- ---------- P-02 ---------- -->
@@ -206,9 +222,9 @@
         <h3><span class="tr">Müşteri Kaybı Tahmini</span><span class="en">Customer Churn Prediction</span></h3>
         <span class="domain tr">dengesiz sınıflandırma · telekom</span><span class="domain en">imbalanced classification · telecom</span>
       </div>
-      <p class="muted small" style="max-width:66ch">
-        <span class="tr">Ayrılacak müşteriyi önceden bulmak. Burada doğruluk yanıltıcı: hiç kimse ayrılmayacak diyen bir model bile yaklaşık %73 doğru çıkar. Asıl soru, ayrılacakların kaçını yakaladığımız.</span>
-        <span class="en">Finding customers about to leave. Accuracy misleads here: a model that predicts "nobody churns" still scores about 73%. The real question is how many leavers you catch.</span>
+      <p class="muted small" style="max-width:68ch">
+        <span class="tr">Bir telekom şirketinde her ay bir grup müşteri sessizce gidiyor. Gideni geri kazanmak, yeni müşteri bulmaktan çok daha pahalıya mal oluyor — ama kimin gitmek üzere olduğunu önceden bilirsen, gitmeden önce arayıp bir teklif yapabilirsin. Model bunu yapıyor: her müşteri için ayrılma riskini çıkarıyor. Buradaki asıl zorluk teknik değil, ölçüyü doğru seçmek — çünkü “hiç kimse ayrılmayacak” diyen boş bir model bile %73 doğru görünüyor.</span>
+        <span class="en">Every month a telecom quietly loses a group of customers. Winning one back costs far more than keeping them — but if you know who is about to leave, you can call them before they do. This model scores that risk for each customer. The hard part is not technical, it is choosing the right measure: a model that simply says “nobody leaves” already looks 73% correct.</span>
       </p>
 
       <div class="metrics">
@@ -278,9 +294,9 @@
         <h3><span class="tr">İşlem Hacmi Tahminleme</span><span class="en">Transaction Volume Forecasting</span></h3>
         <span class="domain tr">zaman serisi · ödeme sistemleri</span><span class="domain en">time series · payments</span>
       </div>
-      <p class="muted small" style="max-width:66ch">
-        <span class="tr">Üye iş yeri bazında günlük işlem hacmini önceden bilmek — kapasite, nakit akışı ve personel planlaması için.</span>
-        <span class="en">Predicting daily transaction volume per merchant — for capacity, cash flow and staffing.</span>
+      <p class="muted small" style="max-width:68ch">
+        <span class="tr">iyzico bir ödeme kuruluşu: binlerce üye iş yeri tahsilatlarını onun altyapısı üzerinden yapıyor ve şirket her işlemden pay alıyor. Dolayısıyla şu soru doğrudan paraya dokunuyor: hangi üye iş yeri büyüyor, hangisi duruyor, önümüzdeki günlerde ne kadar hacim gelecek? Cevabı bilmek hem hangi iş yerine yatırım yapılacağını hem de sistemin ne kadar yüke hazır olması gerektiğini belirliyor. Bu model her iş yerinin kendi geçmişine bakıp gelecekteki günlük işlem hacmini tahmin ediyor.</span>
+        <span class="en">iyzico is a payments company: thousands of merchants collect money through its infrastructure, and it earns a share of every transaction. So one question touches revenue directly — which merchants are growing, which are stalling, and how much volume is coming in the next few days? The answer drives both where to invest and how much load the systems must be ready for. This model predicts each merchant’s future daily volume from its own history.</span>
       </p>
 
       <div class="metrics">
@@ -335,9 +351,9 @@
         <h3><span class="tr">Müşteri Segmentasyonu</span><span class="en">Customer Segmentation</span></h3>
         <span class="domain tr">kümeleme · perakende</span><span class="domain en">clustering · retail</span>
       </div>
-      <p class="muted small" style="max-width:66ch">
-        <span class="tr">Omnichannel alışveriş geçmişinden müşteri grupları çıkarmak: pazarlama bütçesi kime, hangi mesajla gitmeli?</span>
-        <span class="en">Deriving customer groups from omnichannel purchase history: who should the marketing budget reach, and with what message?</span>
+      <p class="muted small" style="max-width:68ch">
+        <span class="tr">Bir perakende markasının yüz binlerce müşterisi var ama pazarlama bütçesi sınırlı. Herkese aynı kampanyayı göndermek hem para israfı hem de işe yaramıyor: yılda bir alışveriş yapanla her hafta gelen kişiye aynı mesaj gitmemeli. Bu çalışma müşterileri gerçek alışveriş davranışlarına göre gruplara ayırıyor — kim sık geliyor, kim çok harcıyor, kim uzaklaşmış. Hangi gruba ne söyleneceği ondan sonra belli oluyor.</span>
+        <span class="en">A retailer has hundreds of thousands of customers and a limited marketing budget. Sending everyone the same campaign wastes money and does not work: someone who shops once a year should not get the message meant for someone who comes every week. This work splits customers by their actual behaviour — who comes often, who spends most, who has drifted away. What to say to each group follows from that.</span>
       </p>
 
       <div class="pgrid">
@@ -385,9 +401,9 @@
         <h3><span class="tr">Oyuncu Potansiyeli Sınıflandırması</span><span class="en">Player Potential Classification</span></h3>
         <span class="domain tr">sınıflandırma · spor analitiği</span><span class="domain en">classification · sports analytics</span>
       </div>
-      <p class="muted small" style="max-width:66ch">
-        <span class="tr">Scoutların maç içinde verdiği yetenek puanlarından, bir oyuncunun "öne çıkan" olarak etiketlenip etiketlenmeyeceğini tahmin etmek.</span>
-        <span class="en">Predicting whether a player gets labelled "highlighted", using the attribute scores scouts assign during matches.</span>
+      <p class="muted small" style="max-width:68ch">
+        <span class="tr">Futbol kulüpleri gözlemcilerini maçlara gönderip oyunculara pas, hız, pozisyon alma gibi başlıklarda puan verdiriyor. Ama bir gözlemcinin “bu çocuk parlak” demesi özneldir ve tek bir oyuncu hakkında onlarca dağınık puan birikiyor. Bu model o puanlara bakıp oyuncunun öne çıkan olarak değerlendirilip değerlendirilmeyeceğini tahmin ediyor — ve hangi yeteneğin bu kararı gerçekte sürüklediğini gösteriyor.</span>
+        <span class="en">Clubs send scouts to matches to score players on things like passing, pace and positioning. But “this one is special” is a subjective call, and dozens of scattered scores pile up for a single player. This model reads those scores and predicts whether a player gets rated as standout — and shows which attributes actually drive that judgement.</span>
       </p>
 
       <div class="metrics">
@@ -445,9 +461,9 @@
         <h3><span class="tr">Konut Fiyat Tahmini</span><span class="en">House Price Prediction</span></h3>
         <span class="domain tr">regresyon · 79 değişken</span><span class="domain en">regression · 79 features</span>
       </div>
-      <p class="muted small" style="max-width:66ch">
-        <span class="tr">Ames konut veri seti: 79 değişken, bolca eksik veri ve çarpık bir hedef. Asıl iş modellemeden önce başlıyor.</span>
-        <span class="en">The Ames housing dataset: 79 features, plenty of missing values and a skewed target. The real work starts before modelling.</span>
+      <p class="muted small" style="max-width:68ch">
+        <span class="tr">Bir evin değerini belirleyen şey tek bir şey değil: kaç odası var, bodrumu nasıl, hangi yıl yapılmış, hangi mahallede, çatısı ne durumda. Emlakçı bunu sezgiyle yapıyor. Bu çalışma aynı kararı 79 değişkenle ve veriyle veriyor. Asıl zorluğu da burada: veri bol miktarda eksik ve düzensiz, yani işin büyük kısmı model kurmadan önce bitiyor.</span>
+        <span class="en">A house’s value is never one thing: how many rooms, what the basement is like, which year it was built, which neighbourhood, what condition the roof is in. An estate agent does this on instinct. This work makes the same judgement from 79 variables and data — and that is where the difficulty sits, because the data is full of gaps and irregularities. Most of the job is finished before any model is built.</span>
       </p>
 
       <div class="pgrid">
@@ -497,9 +513,9 @@
         <h3>Data-Insight Agent</h3>
         <span class="domain tr">ekip projeçesi · 5 kişi · Ocak 2026</span><span class="domain en">team project · 5 people · January 2026</span>
       </div>
-      <p class="muted small" style="max-width:66ch">
-        <span class="tr">CSV yükleyince otomatik keşifsel analiz yapıp yapılandırılmış bir Markdown raporu üreten yapay zekâ destekli analiz aracı. Beş kişilik ekiple, gerçek bir Git akışı içinde geliştirildi.</span>
-        <span class="en">An AI-assisted analysis tool: upload a CSV and get a full exploratory analysis plus a structured Markdown report. Built by a team of five through a real Git workflow.</span>
+      <p class="muted small" style="max-width:68ch">
+        <span class="tr">Elinize yeni bir veri dosyası geldiğinde herkes aynı ilk adımları atıyor: kaç satır var, neresi boş, hangi sütunlar birbiriyle ilişkili, uç değerler nerede. Saatler alan ama her seferinde tekrar eden bir iş. Bu araç o ilk adımları otomatikleştiriyor — CSV’yi yüklüyorsunuz, karşınıza okunabilir bir analiz raporu çıkıyor. Beş kişilik bir ekiple, gerçek bir Git akışı içinde geliştirdik.</span>
+        <span class="en">When a new data file lands on your desk, everyone takes the same first steps: how many rows, where the gaps are, which columns move together, where the extreme values sit. It takes hours and it repeats every single time. This tool automates those first steps — you upload a CSV and get a readable analysis report back. We built it as a team of five through a real Git workflow.</span>
       </p>
 
       <div class="metrics">
@@ -650,9 +666,9 @@
           <h3>reytingim</h3>
           <span class="domain tr">yerel SEO · SaaS</span><span class="domain en">local SEO · SaaS</span>
         </div>
-        <p class="small muted" style="max-width:66ch">
-          <span class="tr">Yerel işletmeler için kredili geo-grid sıralama tarayıcı ve yorum yönetimi. Bir anahtar kelime için işletmenin çevresinde 3×3'ten 7×7'ye grid kurup her noktada Google Haritalar sıralamasını ölçüyor; mesafe ağırlıklı bir görünürlük skoru ve rakip karşılaştırması üretiyor.</span>
-          <span class="en">A credit-based geo-grid rank scanner and review manager for local businesses. For a given keyword it lays a 3×3 to 7×7 grid around the business, measures the Google Maps rank at every point, and produces a distance-weighted visibility score plus a competitor comparison.</span>
+        <p class="small muted" style="max-width:68ch">
+          <span class="tr">Bir kahvaltıcı sahibi şunu merak ediyor: insanlar Google Haritalar’da “yakınımdaki kahvaltıcı” aradığında kaçıncı sırada çıkıyorum? Cevap, arayan kişinin nerede durduğuna göre değişiyor — iki sokak ötede birinci, beş sokak ötede on beşinci olabilirsiniz. Tek bir sıra numarası bu yüzden yanıltıcı. Bu araç işletmenin çevresine bir ızgara kurup her noktada sırayı tek tek ölçüyor; böylece görünürlüğün haritanın neresinde bittiği ve rakiplerin nerede öne geçtiği ortaya çıkıyor.</span>
+          <span class="en">A café owner wants to know one thing: when people search Google Maps for “breakfast near me”, where do I come up? The answer depends on where the person is standing — you can be first from two streets away and fifteenth from five. A single rank number is therefore misleading. This tool lays a grid around the business and measures the rank at every point, showing where visibility runs out and where competitors take over.</span>
         </p>
         <ul class="did">
           <li><span class="tr">Mesafe ağırlıklı görünürlük skorunu (DWPS) ve yorum gücü bileşenini ben tasarladım — ham sıralama ortalaması yanıltıcıydı.</span><span class="en">Designed the distance-weighted visibility score and the review-strength component myself — a raw average rank was misleading.</span></li>
@@ -670,9 +686,9 @@
           <h3>Mix-up</h3>
           <span class="domain tr">CRM · monorepo</span><span class="domain en">CRM · monorepo</span>
         </div>
-        <p class="small muted" style="max-width:66ch">
-          <span class="tr">Müzik sektörü için iki dilli bir CRM. Paylaşılan tip tanımları, tek yerden yönetilen durum etiketleri ve para/tarih biçimlendirmesi ile monorepo yapısında kuruldu.</span>
-          <span class="en">A bilingual CRM for the music industry, built as a monorepo with shared type definitions, centrally managed status labels and one place for currency and date formatting.</span>
+        <p class="small muted" style="max-width:68ch">
+          <span class="tr">Müzik işinde bir kişi aynı anda sanatçı, mekân, tarih ve ödeme takip ediyor; bunlar genelde telefon notlarına ve tablolara dağılıyor. Mix-up hepsini tek yerde toplayan iki dilli bir CRM. Teknik tarafta asıl mesele tutarlılık: aynı durum etiketi her ekranda aynı şeyi ifade etsin, para ve tarih her yerde aynı biçimde görünsün.</span>
+          <span class="en">In the music business one person tracks artists, venues, dates and payments at once, usually scattered across phone notes and spreadsheets. Mix-up pulls all of it into one bilingual CRM. The real technical problem is consistency: the same status label must mean the same thing on every screen, and money and dates must be formatted the same way everywhere.</span>
         </p>
         <ul class="did">
           <li><span class="tr">Her kullanıcıya görünen metni <span class="num">{ tr, en }</span> yapısında zorunlu kıldım — sonradan çeviri eklemek yerine baştan iki dilli.</span><span class="en">Made every user-facing string a <span class="num">{ tr, en }</span> pair by convention — bilingual from the start instead of retrofitted.</span></li>
