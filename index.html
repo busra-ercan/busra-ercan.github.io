@@ -20,10 +20,9 @@
   <div class="wrap">
     <a class="brand" href="#top">Büşra Ercan</a>
     <nav>
-      <a href="#projects"><span class="tr">Projeler</span><span class="en">Projects</span></a>
-      <a href="#skills"><span class="tr">Yetkinlik</span><span class="en">Skills</span></a>
-      <a href="#products"><span class="tr">Ürünler</span><span class="en">Products</span></a>
-      <a href="#background"><span class="tr">Geçmiş</span><span class="en">Background</span></a>
+      <a href="#" data-view="home"><span class="tr">Ben kimim</span><span class="en">About me</span></a>
+      <a href="#projeler" data-view="projeler"><span class="tr">Projeler</span><span class="en">Projects</span></a>
+      <a href="#urunler" data-view="urunler"><span class="tr">Ürünler</span><span class="en">Products</span></a>
       <a href="#contact"><span class="tr">İletişim</span><span class="en">Contact</span></a>
     </nav>
     <div class="tools">
@@ -34,8 +33,7 @@
 </header>
 
 <main id="top">
-
-<!-- ============ HERO ============ -->
+<div class="view" id="view-home">
 <section class="hero">
   <div class="wrap">
     <h1>Büşra Ercan</h1>
@@ -126,12 +124,131 @@
     </div>
   </div>
 </section>
+<section class="cta-wrap">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2><span class="tr">Çalışmalarım</span><span class="en">My work</span></h2>
+        <p class="small" style="margin:8px 0 0;max-width:56ch">
+          <span class="tr">Yedi uçtan uca veri projesi ve üç ürün. Her birinde çözülen problemi, izlediğim yöntemi ve ölçülmüş sonucu adım adım anlattım.</span>
+          <span class="en">Seven end-to-end data projects and three products. For each one I set out the problem, the method I followed and the measured result.</span>
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="#projeler"><span class="tr">Projeleri incele</span><span class="en">See the projects</span></a>
+        <a class="btn" href="#urunler"><span class="tr">Ürünler</span><span class="en">Products</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="background">
+  <div class="wrap row">
+    <div class="rail">
+      <h2><span class="tr">Geçmiş</span><span class="en">Background</span></h2>
+      <p class="note"><span class="tr">Veri bilimine sıfırdan gelmedim. On yıl boyunca zaten ölçüyor, doğruluyor ve karar veriyordum.</span><span class="en">I did not arrive at data science from nothing. For ten years I was already measuring, validating and deciding.</span></p>
+    </div>
 
-<!-- ============ PROJELER ============ -->
+    <div>
+      <ul class="tl">
+        <li class="now">
+          <div class="yr"><span class="tr">Kasım 2025’ten bugüne</span><span class="en">November 2025 to present</span></div>
+          <h4><span class="tr">Veri Bilimi</span><span class="en">Data Science</span></h4>
+          <div class="org"><span class="tr">Bağımsız projeler · Kaggle · Miuul Veri Bilimciliği programı</span><span class="en">Independent projects · Kaggle · Miuul Data Science programme</span></div>
+          <p><span class="tr">200 saatin üzerinde eğitim ve uygulama. Kütüphanelerin hazır fonksiyonlarına güvenmek yerine kendi yardımcı fonksiyonlarımı yazdım, projeler arasında taşıdım ve her modeli ölçülmüş bir sonuçla bitirdim. On altı public notebook, Kaggle Notebooks Expert.</span><span class="en">Over 200 hours of training and practice. Instead of leaning on library defaults I wrote my own helper functions, carried them between projects, and finished every model with a measured result. Sixteen public notebooks, Kaggle Notebooks Expert.</span></p>
+        </li>
+        <li>
+          <div class="yr">2018–2025</div>
+          <h4><span class="tr">Kıdemli Elektrik Sistem Mühendisi</span><span class="en">Senior Electrical System Engineer</span></h4>
+          <div class="org">FEV Türkiye Automotive · İzmir</div>
+          <p><span class="tr">Tam araç HV/LV kablo demeti mimarisi: şematik tasarım, güzergâh, malzeme listesi, güç tüketimi ve gerilim düşümü simülasyonları. CAN, LIN ve J1939 ile diyagnostik; OEM ekipleriyle arıza çözümü. ISO 26262 kapsamında HARA, FMEA ve DFMEA analizleri. Otobüs, kamyon, binek, traktör ve EV/CNG/ICE platformlarında uluslararası ekiplerle çalışma. Yazılım tanımlı araç (SDV) ve zonal mimari erken geliştirme faaliyetleri.</span><span class="en">Full-vehicle HV/LV harness architecture: schematic design, routing, BOM, power-consumption and voltage-drop simulation. Diagnostics over CAN, LIN and J1939, troubleshooting alongside OEM teams. HARA, FMEA and DFMEA under ISO 26262. International teams across buses, trucks, passenger cars, tractors and EV/CNG/ICE platforms. Early work on software-defined vehicle and zonal architecture.</span></p>
+        </li>
+        <li>
+          <div class="yr">2017–2018</div>
+          <h4><span class="tr">Elektrik Güç ve Dağıtım Sistemleri Mühendisi</span><span class="en">Electrical Power &amp; Distribution System Engineer</span></h4>
+          <div class="org"><span class="tr">Segula Technologies · Bursa (TOFAŞ fabrikasında görevli)</span><span class="en">Segula Technologies · Bursa (assigned at the TOFAŞ plant)</span></div>
+          <p><span class="tr">Binek araç projelerinde kablo demeti maliyet optimizasyonu ve değer mühendisliği. Devreye alma, test ve üretime geçiş faaliyetleri. Tasarım iyileştirme fırsatlarını bulmak için kıyaslama çalışmaları.</span><span class="en">Harness cost optimisation and value engineering on passenger-car projects. Commissioning, testing and production launch. Benchmark studies to find design improvements and reduce material cost.</span></p>
+        </li>
+        <li>
+          <div class="yr">2015–2017</div>
+          <h4><span class="tr">Kalite Mühendisi</span><span class="en">Quality Engineer</span></h4>
+          <div class="org"><span class="tr">Nursan Kablo · Kütahya (Ford Otosan fabrikasında tedarikçi mühendisi)</span><span class="en">Nursan Cable · Kütahya (supplier engineer at the Ford Otosan plant)</span></div>
+          <p><span class="tr">Üretim hattının içinde: montaj akışı, takt süresi, istasyon bağımlılıkları, kalite kapıları, hata önleyici mekanizmalar ve malzeme izlenebilirliği. PPAP, PFMEA, RCA ve 8D süreçlerini yürüttüm. Bir sorunun kök nedenini veriye bakarak bulmayı burada öğrendim.</span><span class="en">Inside the production line: assembly flow, takt time, station dependencies, quality gates, error-proofing and material traceability. Ran PPAP, PFMEA, RCA and 8D. This is where I learned to find a root cause by looking at the data.</span></p>
+        </li>
+        <li>
+          <div class="yr">2010–2015</div>
+          <h4><span class="tr">Elektrik-Elektronik Mühendisliği, Lisans</span><span class="en">B.Sc. Electrical &amp; Electronics Engineering</span></h4>
+          <div class="org"><span class="tr">Dumlupınar Üniversitesi</span><span class="en">Dumlupınar University</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section><section id="skills">
+  <div class="wrap row">
+    <div class="rail">
+      <h2><span class="tr">Yetkinlik</span><span class="en">Skills</span></h2>
+      <p class="note"><span class="tr">Liste değil, kanıt. Her başlığın altında bunu hangi projede kullandığım yazıyor.</span><span class="en">Not a list, but evidence. Each heading says where I actually used it.</span></p>
+    </div>
+
+    <div>
+      <div class="skills">
+        <div>
+          <h4><span class="tr">Makine öğrenmesi</span><span class="en">Machine learning</span></h4>
+          <div class="ev"><span class="tr">Regresyon, sınıflandırma, kümeleme. P-01'de yedi, P-06'da on model karşılaştırdım; P-05'te beşini optimize ettim.</span><span class="en">Regression, classification, clustering. Seven models compared in P-01, ten in P-06, five tuned in P-05.</span></div>
+          <ul><li>scikit-learn</li><li>LightGBM</li><li>XGBoost</li><li>CatBoost</li><li>K-Means</li><li>Optuna</li><li>GridSearchCV</li><li>Pipeline</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Veri hazırlama ve analiz</span><span class="en">Data preparation &amp; analysis</span></h4>
+          <div class="ev"><span class="tr">Keşifsel analiz, eksik ve aykırı değer, özellik mühendisliği. Kendi <span class="num">check_df</span>, <span class="num">cat_summary</span>, <span class="num">num_summary</span> fonksiyonlarımı yazdım ve projeler arasında taşıdım. SQL ve Power BI’ı eğitim programımda çalıştım; bu ikisinde yayına açık bir örneğim henüz yok.</span><span class="en">Exploratory analysis, missing values, outliers, feature engineering. I wrote my own <span class="num">check_df</span>, <span class="num">cat_summary</span> and <span class="num">num_summary</span> helpers and carried them across projects. I studied SQL and Power BI in my training programme; I do not yet have a published example of either.</span></div>
+          <ul><li>pandas</li><li>NumPy</li><li>SQL</li><li>Power&nbsp;BI</li><li>Excel</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li><li>SciPy</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Derin öğrenme</span><span class="en">Deep learning</span></h4>
+          <div class="ev"><span class="tr">P-02'de ağırlıklı kayıp fonksiyonu, erken durdurma ve Keras Tuner. Ayrı bir çalışmada dropout ve erken durdurmanın aşırı öğrenmeye etkisini ölçtüm.</span><span class="en">Weighted loss, early stopping and Keras Tuner in P-02. In a separate study I measured how dropout and early stopping affect overfitting.</span></div>
+          <ul><li>TensorFlow</li><li>Keras</li><li>Keras&nbsp;Tuner</li><li>tf.data</li><li>callbacks</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Zaman serisi ve tahminleme</span><span class="en">Time series &amp; forecasting</span></h4>
+          <div class="ev"><span class="tr">P-03'te lag/rolling/EWM değişkenleri, tarihe göre bölme ve özel SMAPE metriği. Ayrıca düzleştirme yöntemleri ve talep tahminleme çalışmaları.</span><span class="en">Lag/rolling/EWM features, date-based splitting and a custom SMAPE metric in P-03. Plus smoothing methods and demand forecasting studies.</span></div>
+          <ul><li class="tr">gecikme değişkenleri</li><li class="en">lag features</li><li>SMAPE</li><li class="tr">zaman bazlı CV</li><li class="en">time-based CV</li><li class="tr">düzleştirme</li><li class="en">smoothing</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">İş analitiği</span><span class="en">Business analytics</span></h4>
+          <div class="ev"><span class="tr">RFM ve CLTV modelleri, A/B testi ve hipotez testleri, birliktelik kuralları, kural tabanlı sınıflandırma. Modelden önce sorulması gereken soru hangisi, onu ayırt etmek.</span><span class="en">RFM and CLTV models, A/B and hypothesis testing, association rules, rule-based classification. Knowing which question comes before the model.</span></div>
+          <ul><li>RFM</li><li>BG-NBD</li><li>Gamma-Gamma</li><li>A/B test</li><li class="tr">hipotez testi</li><li class="en">hypothesis testing</li><li>Apriori</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Mühendislik pratiği</span><span class="en">Engineering practice</span></h4>
+          <div class="ev"><span class="tr">On yıllık mühendislik alışkanlıkları: ölçmeden iddia etmemek, kök nedene inmek, yaptığını belgelemek. Git tarafında ayrı dal, pull request ve kod incelemesiyle çalışıyorum. P-07'de beş kişilik ekiple böyle yürüdü.</span><span class="en">Ten years of engineering habits: no claim without a measurement, trace it to root cause, document what you did. On Git I work with branches, pull requests and code review; that is how P-07 ran with a team of five.</span></div>
+          <ul><li>Git</li><li>GitHub</li><li class="tr">dal · PR · inceleme</li><li class="en">branch · PR · review</li><li>Jupyter</li><li>PyCharm</li><li>RCA · 8D</li><li>FMEA</li><li class="tr">kök neden analizi</li><li class="en">root cause analysis</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="contact">
+  <div class="wrap row">
+    <div class="rail">
+      <h2><span class="tr">İletişim</span><span class="en">Contact</span></h2>
+    </div>
+    <div>
+      <p class="lede">
+        <span class="tr">İzmir'deyim, veri analisti ve veri bilimci rollerine açığım. Üretim, otomotiv ve lojistik verisiyle çalışan ekiplerde alan bilgimin doğrudan karşılığı var.</span>
+        <span class="en">I am in İzmir and open to data analyst and data scientist roles. In teams working with manufacturing, automotive or logistics data, my domain background pays for itself immediately.</span>
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:busr.ercan@gmail.com"><span><span class="lbl">e-posta</span><span class="val2">busr.ercan@gmail.com</span></span></a>
+        <a href="https://www.linkedin.com/in/busra-ercan" target="_blank" rel="noopener"><span><span class="lbl">LinkedIn</span><span class="val2">busra-ercan</span></span></a>
+        <a href="https://github.com/busra-ercan" target="_blank" rel="noopener"><span><span class="lbl">GitHub</span><span class="val2">busra-ercan</span></span></a>
+        <a href="https://www.kaggle.com/busraercan" target="_blank" rel="noopener"><span><span class="lbl">Kaggle</span><span class="val2">busraercan</span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="view" id="view-projeler">
 <section id="projects">
   <div class="wrap row">
     <div class="rail">
-      <div class="sheet">01</div>
       <h2><span class="tr">Projeler</span><span class="en">Projects</span></h2>
       <p class="note"><span class="tr">Altı kişisel proje ve bir ekip projesi. Her biri gerçek veriyle, kendi yazdığım fonksiyonlarla ve ölçülmüş sonuçlarla.</span><span class="en">Six solo projects and one team project. Real data, functions I wrote myself, measured results.</span></p>
     </div>
@@ -156,6 +273,10 @@
         <div><div class="v">£2.802</div><div class="k">RMSE</div></div>
         <div><div class="v">7</div><div class="k"><span class="tr">model karşılaştırıldı</span><span class="en">models compared</span></div></div>
       </div>
+      <p class="metric-note">
+        <span class="tr"><strong>Bu sayılar ne diyor?</strong> R² 0,918, fiyattaki değişkenliğin %91,8’ini modelin açıklayabildiği anlamına geliyor. MAE £1.738, tahminlerin gerçek fiyattan ortalama bu kadar saptığını gösteriyor. RMSE de bir hata ölçüsü ama büyük sapmaları daha ağır cezalandırır; ikisinin birbirine yakın kalması, modelin tek tük araçta çok büyük hata yapmadığı anlamına gelir.</span>
+        <span class="en"><strong>What these numbers mean.</strong> R² 0.918 means the model explains 91.8% of the variation in price. MAE £1,738 is how far the predictions sit from the real price on average. RMSE is also an error measure, but it punishes large misses more heavily; the two staying close together means the model is not making huge errors on the odd car.</span>
+      </p>
 
       <div class="pgrid">
         <div>
@@ -304,6 +425,10 @@
         <div><div class="v">%1,19</div><div class="k"><span class="tr">SMAPE (eğitim)</span><span class="en">SMAPE (train)</span></div></div>
         <div><div class="v">1.000</div><div class="k"><span class="tr">boosting iterasyonu</span><span class="en">boosting iterations</span></div></div>
       </div>
+      <p class="metric-note">
+        <span class="tr"><strong>SMAPE nedir?</strong> Tahminin gerçek değerden yüzde kaç saptığını ölçer. %2,10, tahminlerin gerçek işlem hacminden ortalama yalnızca %2 kadar uzak olduğu anlamına geliyor. Günlük hacim tahmininde bu dar bir hata payıdır. Eğitim ve doğrulama değerlerinin ikisini birden vermemin sebebi, aralarındaki farkın modelin ezber yapıp yapmadığını göstermesi.</span>
+        <span class="en"><strong>What SMAPE is.</strong> It measures how far a prediction lands from the real value, as a percentage. 2.10% means the forecasts sit on average only about 2% away from actual transaction volume, which is a narrow margin for daily volume. I report training and validation together because the gap between them shows whether the model is memorising.</span>
+      </p>
 
       <div class="pgrid">
         <div>
@@ -376,7 +501,7 @@
 
         <figure class="chart">
           <div class="chart-title"><span class="tr">Kaç segment? Silhouette skoru</span><span class="en">How many segments? Silhouette score</span></div>
-          <div class="chart-sub"><span class="tr">Yüksek skor, kümelerin birbirinden daha net ayrıldığı anlamına gelir.</span><span class="en">A higher score means the clusters separate more cleanly.</span></div>
+          <div class="chart-sub"><span class="tr">Silhouette skoru, bir müşterinin kendi kümesine, en yakın komşu kümeye kıyasla ne kadar benzediğini ölçer. 1’e yaklaştıkça kümeler net ayrışır, 0’a yaklaştıkça iç içe geçer.</span><span class="en">The silhouette score measures how much a customer resembles its own cluster compared with the nearest neighbouring one. Closer to 1 means the clusters separate cleanly; closer to 0 means they overlap.</span></div>
           <svg viewBox="0 0 430 240" class="hit">
             <g class="gridline"><line x1="52" y1="200" x2="414" y2="200"/><line x1="52" y1="166" x2="414" y2="166"/><line x1="52" y1="132" x2="414" y2="132"/><line x1="52" y1="98" x2="414" y2="98"/><line x1="52" y1="64" x2="414" y2="64"/><line x1="52" y1="30" x2="414" y2="30"/></g>
             <g class="ax" text-anchor="end"><text x="46" y="204">0,25</text><text x="46" y="170">0,30</text><text x="46" y="136">0,35</text><text x="46" y="102">0,40</text><text x="46" y="68">0,45</text><text x="46" y="34">0,50</text></g>
@@ -411,6 +536,10 @@
         <div><div class="v">0,871</div><div class="k"><span class="tr">CV doğruluk</span><span class="en">CV accuracy</span></div></div>
         <div><div class="v">5</div><div class="k"><span class="tr">model optimize edildi</span><span class="en">models tuned</span></div></div>
       </div>
+      <p class="metric-note">
+        <span class="tr"><strong>Neden doğruluk değil ROC-AUC?</strong> Öne çıkan oyuncular azınlıkta olduğu için, herkese “ortalama” diyen bir model bile yüksek doğruluk alır. ROC-AUC bu tuzağa düşmez: 0,908, modelin öne çıkan bir oyuncuyu öne çıkmayan birinden %90,8 ihtimalle daha yüksek sıraladığı anlamına gelir. CV doğruluk 0,871 ise veri farklı parçalara bölünüp model tekrar tekrar sınanarak ölçüldü, yani tek bir şanslı bölünmenin sonucu değil.</span>
+        <span class="en"><strong>Why ROC-AUC rather than accuracy.</strong> Standout players are the minority, so a model that calls everyone “average” still scores high on accuracy. ROC-AUC does not fall for that: 0.908 means the model ranks a standout player above a non-standout 90.8% of the time. The CV accuracy of 0.871 was measured by splitting the data repeatedly and retesting, so it is not the result of one lucky split.</span>
+      </p>
 
       <div class="pgrid">
         <div>
@@ -464,6 +593,10 @@
       <p class="muted small" style="max-width:68ch">
         <span class="tr">Bir evin değerini belirleyen şey tek bir şey değil: kaç odası var, bodrumu nasıl, hangi yıl yapılmış, hangi mahallede, çatısı ne durumda. Emlakçı bunu sezgiyle yapıyor. Bu çalışma aynı kararı 79 değişkenle ve veriyle veriyor. Asıl zorluğu da burada: veri bol miktarda eksik ve düzensiz, yani işin büyük kısmı model kurmadan önce bitiyor.</span>
         <span class="en">A house’s value is never one thing: how many rooms, what the basement is like, which year it was built, which neighbourhood, what condition the roof is in. An estate agent does this on instinct. This work makes the same judgement from 79 variables and data, and that is where the difficulty sits, because the data is full of gaps and irregularities. Most of the job is finished before any model is built.</span>
+      </p>
+      <p class="metric-note">
+        <span class="tr"><strong>Grafikteki RMSE neden küçük bir sayı?</strong> Hedef değişkeni log dönüşümüyle normalleştirdiğim için hata da log ölçeğinde ölçülüyor. Yani 0,127 doğrudan dolar değil; modelleri aynı terazide karşılaştırmak için kullanılan ortak bir birim. Küçük olan daha iyi.</span>
+        <span class="en"><strong>Why the RMSE here is a small number.</strong> I normalised the target with a log transform, so the error is measured on the log scale too. 0.127 is not dollars; it is a common unit for comparing models on the same scale. Smaller is better.</span>
       </p>
 
       <div class="pgrid">
@@ -598,58 +731,23 @@
     </div>
   </div>
 </section>
-
-<!-- ============ YETKİNLİK ============ -->
-<section id="skills">
-  <div class="wrap row">
-    <div class="rail">
-      <div class="sheet">02</div>
-      <h2><span class="tr">Yetkinlik</span><span class="en">Skills</span></h2>
-      <p class="note"><span class="tr">Liste değil, kanıt. Her başlığın altında bunu hangi projede kullandığım yazıyor.</span><span class="en">Not a list, but evidence. Each heading says where I actually used it.</span></p>
-    </div>
-
-    <div>
-      <div class="skills">
-        <div>
-          <h4><span class="tr">Makine öğrenmesi</span><span class="en">Machine learning</span></h4>
-          <div class="ev"><span class="tr">Regresyon, sınıflandırma, kümeleme. P-01'de yedi, P-06'da on model karşılaştırdım; P-05'te beşini optimize ettim.</span><span class="en">Regression, classification, clustering. Seven models compared in P-01, ten in P-06, five tuned in P-05.</span></div>
-          <ul><li>scikit-learn</li><li>LightGBM</li><li>XGBoost</li><li>CatBoost</li><li>K-Means</li><li>Optuna</li><li>GridSearchCV</li><li>Pipeline</li></ul>
-        </div>
-        <div>
-          <h4><span class="tr">Veri hazırlama ve analiz</span><span class="en">Data preparation &amp; analysis</span></h4>
-          <div class="ev"><span class="tr">Keşifsel analiz, eksik ve aykırı değer, özellik mühendisliği. Kendi <span class="num">check_df</span>, <span class="num">cat_summary</span>, <span class="num">num_summary</span> fonksiyonlarımı yazdım ve projeler arasında taşıdım. SQL ve Power BI’ı eğitim programımda çalıştım; bu ikisinde yayına açık bir örneğim henüz yok.</span><span class="en">Exploratory analysis, missing values, outliers, feature engineering. I wrote my own <span class="num">check_df</span>, <span class="num">cat_summary</span> and <span class="num">num_summary</span> helpers and carried them across projects. I studied SQL and Power BI in my training programme; I do not yet have a published example of either.</span></div>
-          <ul><li>pandas</li><li>NumPy</li><li>SQL</li><li>Power&nbsp;BI</li><li>Excel</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li><li>SciPy</li></ul>
-        </div>
-        <div>
-          <h4><span class="tr">Derin öğrenme</span><span class="en">Deep learning</span></h4>
-          <div class="ev"><span class="tr">P-02'de ağırlıklı kayıp fonksiyonu, erken durdurma ve Keras Tuner. Ayrı bir çalışmada dropout ve erken durdurmanın aşırı öğrenmeye etkisini ölçtüm.</span><span class="en">Weighted loss, early stopping and Keras Tuner in P-02. In a separate study I measured how dropout and early stopping affect overfitting.</span></div>
-          <ul><li>TensorFlow</li><li>Keras</li><li>Keras&nbsp;Tuner</li><li>tf.data</li><li>callbacks</li></ul>
-        </div>
-        <div>
-          <h4><span class="tr">Zaman serisi ve tahminleme</span><span class="en">Time series &amp; forecasting</span></h4>
-          <div class="ev"><span class="tr">P-03'te lag/rolling/EWM değişkenleri, tarihe göre bölme ve özel SMAPE metriği. Ayrıca düzleştirme yöntemleri ve talep tahminleme çalışmaları.</span><span class="en">Lag/rolling/EWM features, date-based splitting and a custom SMAPE metric in P-03. Plus smoothing methods and demand forecasting studies.</span></div>
-          <ul><li class="tr">gecikme değişkenleri</li><li class="en">lag features</li><li>SMAPE</li><li class="tr">zaman bazlı CV</li><li class="en">time-based CV</li><li class="tr">düzleştirme</li><li class="en">smoothing</li></ul>
-        </div>
-        <div>
-          <h4><span class="tr">İş analitiği</span><span class="en">Business analytics</span></h4>
-          <div class="ev"><span class="tr">RFM ve CLTV modelleri, A/B testi ve hipotez testleri, birliktelik kuralları, kural tabanlı sınıflandırma. Modelden önce sorulması gereken soru hangisi, onu ayırt etmek.</span><span class="en">RFM and CLTV models, A/B and hypothesis testing, association rules, rule-based classification. Knowing which question comes before the model.</span></div>
-          <ul><li>RFM</li><li>BG-NBD</li><li>Gamma-Gamma</li><li>A/B test</li><li class="tr">hipotez testi</li><li class="en">hypothesis testing</li><li>Apriori</li></ul>
-        </div>
-        <div>
-          <h4><span class="tr">Mühendislik pratiği</span><span class="en">Engineering practice</span></h4>
-          <div class="ev"><span class="tr">On yıllık mühendislik alışkanlıkları: ölçmeden iddia etmemek, kök nedene inmek, yaptığını belgelemek. Git tarafında ayrı dal, pull request ve kod incelemesiyle çalışıyorum. P-07'de beş kişilik ekiple böyle yürüdü.</span><span class="en">Ten years of engineering habits: no claim without a measurement, trace it to root cause, document what you did. On Git I work with branches, pull requests and code review; that is how P-07 ran with a team of five.</span></div>
-          <ul><li>Git</li><li>GitHub</li><li class="tr">dal · PR · inceleme</li><li class="en">branch · PR · review</li><li>Jupyter</li><li>PyCharm</li><li>RCA · 8D</li><li>FMEA</li><li class="tr">kök neden analizi</li><li class="en">root cause analysis</li></ul>
-        </div>
+<section class="cta-wrap">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2><span class="tr">Devamı</span><span class="en">Next</span></h2>
       </div>
+      <div class="cta-actions"><a class="btn btn-primary" href="#urunler"><span class="tr">Ürünlere bak</span><span class="en">See the products</span></a><a class="btn" href="#"><span class="tr">Başa dön</span><span class="en">Back to start</span></a></div>
     </div>
   </div>
 </section>
 
-<!-- ============ ÜRÜNLER ============ -->
+</div>
+
+<div class="view" id="view-urunler">
 <section id="products">
   <div class="wrap row">
     <div class="rail">
-      <div class="sheet">03</div>
       <h2><span class="tr">Ürünler</span><span class="en">Products</span></h2>
       <p class="note"><span class="tr">Analiz yapmakla çalışan bir şey teslim etmek aynı iş değil. Bu üçü canlı ürün olarak kuruldu.</span><span class="en">Running an analysis and shipping something that works are not the same job. These three were built as products.</span></p>
     </div>
@@ -712,74 +810,18 @@
     </div>
   </div>
 </section>
-
-<!-- ============ GEÇMİŞ ============ -->
-<section id="background">
-  <div class="wrap row">
-    <div class="rail">
-      <div class="sheet">04</div>
-      <h2><span class="tr">Geçmiş</span><span class="en">Background</span></h2>
-      <p class="note"><span class="tr">Veri bilimine sıfırdan gelmedim. On yıl boyunca zaten ölçüyor, doğruluyor ve karar veriyordum.</span><span class="en">I did not arrive at data science from nothing. For ten years I was already measuring, validating and deciding.</span></p>
-    </div>
-
-    <div>
-      <ul class="tl">
-        <li class="now">
-          <div class="yr"><span class="tr">Kasım 2025’ten bugüne</span><span class="en">November 2025 to present</span></div>
-          <h4><span class="tr">Veri Bilimi</span><span class="en">Data Science</span></h4>
-          <div class="org"><span class="tr">Bağımsız projeler · Kaggle · Miuul Veri Bilimciliği programı</span><span class="en">Independent projects · Kaggle · Miuul Data Science programme</span></div>
-          <p><span class="tr">200 saatin üzerinde eğitim ve uygulama. Kütüphanelerin hazır fonksiyonlarına güvenmek yerine kendi yardımcı fonksiyonlarımı yazdım, projeler arasında taşıdım ve her modeli ölçülmüş bir sonuçla bitirdim. On altı public notebook, Kaggle Notebooks Expert.</span><span class="en">Over 200 hours of training and practice. Instead of leaning on library defaults I wrote my own helper functions, carried them between projects, and finished every model with a measured result. Sixteen public notebooks, Kaggle Notebooks Expert.</span></p>
-        </li>
-        <li>
-          <div class="yr">2018–2025</div>
-          <h4><span class="tr">Kıdemli Elektrik Sistem Mühendisi</span><span class="en">Senior Electrical System Engineer</span></h4>
-          <div class="org">FEV Türkiye Automotive · İzmir</div>
-          <p><span class="tr">Tam araç HV/LV kablo demeti mimarisi: şematik tasarım, güzergâh, malzeme listesi, güç tüketimi ve gerilim düşümü simülasyonları. CAN, LIN ve J1939 ile diyagnostik; OEM ekipleriyle arıza çözümü. ISO 26262 kapsamında HARA, FMEA ve DFMEA analizleri. Otobüs, kamyon, binek, traktör ve EV/CNG/ICE platformlarında uluslararası ekiplerle çalışma. Yazılım tanımlı araç (SDV) ve zonal mimari erken geliştirme faaliyetleri.</span><span class="en">Full-vehicle HV/LV harness architecture: schematic design, routing, BOM, power-consumption and voltage-drop simulation. Diagnostics over CAN, LIN and J1939, troubleshooting alongside OEM teams. HARA, FMEA and DFMEA under ISO 26262. International teams across buses, trucks, passenger cars, tractors and EV/CNG/ICE platforms. Early work on software-defined vehicle and zonal architecture.</span></p>
-        </li>
-        <li>
-          <div class="yr">2017–2018</div>
-          <h4><span class="tr">Elektrik Güç ve Dağıtım Sistemleri Mühendisi</span><span class="en">Electrical Power &amp; Distribution System Engineer</span></h4>
-          <div class="org"><span class="tr">Segula Technologies · Bursa (TOFAŞ fabrikasında görevli)</span><span class="en">Segula Technologies · Bursa (assigned at the TOFAŞ plant)</span></div>
-          <p><span class="tr">Binek araç projelerinde kablo demeti maliyet optimizasyonu ve değer mühendisliği. Devreye alma, test ve üretime geçiş faaliyetleri. Tasarım iyileştirme fırsatlarını bulmak için kıyaslama çalışmaları.</span><span class="en">Harness cost optimisation and value engineering on passenger-car projects. Commissioning, testing and production launch. Benchmark studies to find design improvements and reduce material cost.</span></p>
-        </li>
-        <li>
-          <div class="yr">2015–2017</div>
-          <h4><span class="tr">Kalite Mühendisi</span><span class="en">Quality Engineer</span></h4>
-          <div class="org"><span class="tr">Nursan Kablo · Kütahya (Ford Otosan fabrikasında tedarikçi mühendisi)</span><span class="en">Nursan Cable · Kütahya (supplier engineer at the Ford Otosan plant)</span></div>
-          <p><span class="tr">Üretim hattının içinde: montaj akışı, takt süresi, istasyon bağımlılıkları, kalite kapıları, hata önleyici mekanizmalar ve malzeme izlenebilirliği. PPAP, PFMEA, RCA ve 8D süreçlerini yürüttüm. Bir sorunun kök nedenini veriye bakarak bulmayı burada öğrendim.</span><span class="en">Inside the production line: assembly flow, takt time, station dependencies, quality gates, error-proofing and material traceability. Ran PPAP, PFMEA, RCA and 8D. This is where I learned to find a root cause by looking at the data.</span></p>
-        </li>
-        <li>
-          <div class="yr">2010–2015</div>
-          <h4><span class="tr">Elektrik-Elektronik Mühendisliği, Lisans</span><span class="en">B.Sc. Electrical &amp; Electronics Engineering</span></h4>
-          <div class="org"><span class="tr">Dumlupınar Üniversitesi</span><span class="en">Dumlupınar University</span></div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ İLETİŞİM ============ -->
-<section id="contact">
-  <div class="wrap row">
-    <div class="rail">
-      <div class="sheet">05</div>
-      <h2><span class="tr">İletişim</span><span class="en">Contact</span></h2>
-    </div>
-    <div>
-      <p class="lede">
-        <span class="tr">İzmir'deyim, veri analisti ve veri bilimci rollerine açığım. Üretim, otomotiv ve lojistik verisiyle çalışan ekiplerde alan bilgimin doğrudan karşılığı var.</span>
-        <span class="en">I am in İzmir and open to data analyst and data scientist roles. In teams working with manufacturing, automotive or logistics data, my domain background pays for itself immediately.</span>
-      </p>
-      <div class="contact-grid">
-        <a href="mailto:busr.ercan@gmail.com"><span><span class="lbl">e-posta</span><span class="val2">busr.ercan@gmail.com</span></span></a>
-        <a href="https://www.linkedin.com/in/busra-ercan" target="_blank" rel="noopener"><span><span class="lbl">LinkedIn</span><span class="val2">busra-ercan</span></span></a>
-        <a href="https://github.com/busra-ercan" target="_blank" rel="noopener"><span><span class="lbl">GitHub</span><span class="val2">busra-ercan</span></span></a>
-        <a href="https://www.kaggle.com/busraercan" target="_blank" rel="noopener"><span><span class="lbl">Kaggle</span><span class="val2">busraercan</span></span></a>
+<section class="cta-wrap">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2><span class="tr">Devamı</span><span class="en">Next</span></h2>
       </div>
+      <div class="cta-actions"><a class="btn btn-primary" href="#projeler"><span class="tr">Veri projelerine bak</span><span class="en">See the data projects</span></a><a class="btn" href="#"><span class="tr">Başa dön</span><span class="en">Back to start</span></a></div>
     </div>
   </div>
 </section>
 
+</div>
 </main>
 
 <footer>

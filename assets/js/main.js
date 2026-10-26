@@ -72,6 +72,44 @@
     write('theme', next);
   });
 
+
+  /* ---- görünümler arası geçiş (hash yönlendirme) ---- */
+  var VIEWS = ['home', 'projeler', 'urunler'];
+
+  function showView(name, scroll) {
+    if (VIEWS.indexOf(name) === -1) name = 'home';
+    VIEWS.forEach(function (v) {
+      var el = document.getElementById('view-' + v);
+      if (el) el.classList.toggle('on', v === name);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.bar nav a[data-view]'), function (a) {
+      if (a.getAttribute('data-view') === name) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
+    if (scroll !== false) window.scrollTo(0, 0);
+  }
+
+  function route(scroll) {
+    var h = (location.hash || '').replace(/^#\/?/, '');
+    if (VIEWS.indexOf(h) !== -1) { showView(h, scroll); return; }
+    // görünüm değil, sayfa içi bir bağlantı olabilir
+    showView('home', false);
+    if (h) {
+      var target = document.getElementById(h);
+      if (target) {
+        // görünüm yeni açıldı; yerleşim oturduktan sonra kaydır
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { target.scrollIntoView(); });
+        });
+        return;
+      }
+    }
+    if (scroll !== false) window.scrollTo(0, 0);
+  }
+
+  window.addEventListener('hashchange', function () { route(true); });
+  route(false);
+
   /* ---- grafik ipuçları ---- */
   var tip = document.getElementById('tip');
   var active = null;
