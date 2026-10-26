@@ -42,7 +42,7 @@
       <span class="en">Data Scientist · Electrical &amp; Electronics Engineer</span>
     </div>
     <div class="where">
-      <span>İzmir, Türkiye</span><span class="tr">İngilizce: akıcı</span><span class="en">English: fluent</span><span class="tr">Yeni rollere açık</span><span class="en">Open to new roles</span>
+      <span>İzmir, Türkiye</span><span class="tr">İngilizce: akıcı</span><span class="en">English: fluent</span><span class="tr">Taşınmaya açık</span><span class="en">Open to relocation</span>
     </div>
 
     <p class="lede">
@@ -186,40 +186,39 @@
   <div class="wrap row">
     <div class="rail">
       <h2><span class="tr">Yetkinlik</span><span class="en">Skills</span></h2>
-      <p class="note"><span class="tr">Liste değil, kanıt. Her başlığın altında bunu hangi projede kullandığım yazıyor.</span><span class="en">Not a list, but evidence. Each heading says where I actually used it.</span></p>
     </div>
 
     <div>
       <div class="skills">
         <div>
           <h4><span class="tr">Makine öğrenmesi</span><span class="en">Machine learning</span></h4>
-          <div class="ev"><span class="tr">Regresyon, sınıflandırma, kümeleme. P-01'de yedi, P-06'da on model karşılaştırdım; P-05'te beşini optimize ettim.</span><span class="en">Regression, classification, clustering. Seven models compared in P-01, ten in P-06, five tuned in P-05.</span></div>
+          <div class="ev"><span class="tr">Bir problemi tahmin problemine çevirip doğru modeli seçmek. Araç fiyat tahmininde yedi, konut fiyat tahmininde on modeli aynı kurguda karşılaştırdım; oyuncu sınıflandırmasında beşini hiperparametre optimizasyonundan geçirdim. Model seçimi sezgiyle değil ölçümle yapılır.</span><span class="en">Turning a problem into a prediction problem and choosing the right model for it. I compared seven models on used-car pricing and ten on house pricing under one setup, and tuned five for the player classification task. Model choice is made by measurement, not instinct.</span></div>
           <ul><li>scikit-learn</li><li>LightGBM</li><li>XGBoost</li><li>CatBoost</li><li>K-Means</li><li>Optuna</li><li>GridSearchCV</li><li>Pipeline</li></ul>
         </div>
         <div>
           <h4><span class="tr">Veri hazırlama ve analiz</span><span class="en">Data preparation &amp; analysis</span></h4>
-          <div class="ev"><span class="tr">Keşifsel analiz, eksik ve aykırı değer, özellik mühendisliği. Kendi <span class="num">check_df</span>, <span class="num">cat_summary</span>, <span class="num">num_summary</span> fonksiyonlarımı yazdım ve projeler arasında taşıdım. SQL ve Power BI’ı eğitim programımda çalıştım; bu ikisinde yayına açık bir örneğim henüz yok.</span><span class="en">Exploratory analysis, missing values, outliers, feature engineering. I wrote my own <span class="num">check_df</span>, <span class="num">cat_summary</span> and <span class="num">num_summary</span> helpers and carried them across projects. I studied SQL and Power BI in my training programme; I do not yet have a published example of either.</span></div>
+          <div class="ev"><span class="tr">Ham veriyi modellenebilir hale getirmek: eksik değerler, aykırı değerler, tutarsız kategoriler ve yeni değişken türetme. Bir projede işin büyük kısmı burada biter. Kendi <span class="num">check_df</span>, <span class="num">cat_summary</span>, <span class="num">num_summary</span> fonksiyonlarımı yazıp projeler arasında taşıdım. SQL ve Power BI’ı eğitim programımda çalıştım.</span><span class="en">Getting raw data into a state a model can use: missing values, outliers, inconsistent categories and deriving new features. On most projects this is where the bulk of the work finishes. I wrote my own <span class="num">check_df</span>, <span class="num">cat_summary</span> and <span class="num">num_summary</span> helpers and carried them between projects. I studied SQL and Power BI in my training programme.</span></div>
           <ul><li>pandas</li><li>NumPy</li><li>SQL</li><li>Power&nbsp;BI</li><li>Excel</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li><li>SciPy</li></ul>
         </div>
         <div>
           <h4><span class="tr">Derin öğrenme</span><span class="en">Deep learning</span></h4>
-          <div class="ev"><span class="tr">P-02'de ağırlıklı kayıp fonksiyonu, erken durdurma ve Keras Tuner. Ayrı bir çalışmada dropout ve erken durdurmanın aşırı öğrenmeye etkisini ölçtüm.</span><span class="en">Weighted loss, early stopping and Keras Tuner in P-02. In a separate study I measured how dropout and early stopping affect overfitting.</span></div>
-          <ul><li>TensorFlow</li><li>Keras</li><li>Keras&nbsp;Tuner</li><li>tf.data</li><li>callbacks</li></ul>
+          <div class="ev"><span class="tr">Sinir ağları, klasik modellerin yetmediği yerde devreye giren bir yöntem. Müşteri kaybı projesinde TensorFlow ve Keras kütüphaneleriyle bir sinir ağı kurdum: ağa hangi hatanın daha pahalıya mal olduğunu öğretmek için kayıp fonksiyonunu ağırlıklandırdım, modelin ezberlemeye başladığı noktada eğitimi otomatik durdurdum ve en iyi ayarları Keras Tuner ile aradım. Ayrı bir çalışmada da ezberlemenin nasıl ölçülüp önleneceğini inceledim.</span><span class="en">Neural networks are the tool for where classical models stop being enough. On the churn project I built one with TensorFlow and Keras: I weighted the loss function to teach the network which mistake costs more, stopped training automatically at the point it began memorising, and searched for the best settings with Keras Tuner. In a separate study I looked at how memorising is measured and prevented.</span></div>
+          <ul><li>TensorFlow</li><li>Keras</li><li>Keras&nbsp;Tuner</li><li class="tr">ağırlıklı kayıp</li><li class="en">weighted loss</li><li class="tr">erken durdurma</li><li class="en">early stopping</li></ul>
         </div>
         <div>
           <h4><span class="tr">Zaman serisi ve tahminleme</span><span class="en">Time series &amp; forecasting</span></h4>
-          <div class="ev"><span class="tr">P-03'te lag/rolling/EWM değişkenleri, tarihe göre bölme ve özel SMAPE metriği. Ayrıca düzleştirme yöntemleri ve talep tahminleme çalışmaları.</span><span class="en">Lag/rolling/EWM features, date-based splitting and a custom SMAPE metric in P-03. Plus smoothing methods and demand forecasting studies.</span></div>
-          <ul><li class="tr">gecikme değişkenleri</li><li class="en">lag features</li><li>SMAPE</li><li class="tr">zaman bazlı CV</li><li class="en">time-based CV</li><li class="tr">düzleştirme</li><li class="en">smoothing</li></ul>
+          <div class="ev"><span class="tr">Geçmişe bakarak geleceği tahmin etmek. Bir serinin en güçlü ipucu kendi geçmişidir, bu yüzden özel değişkenler türetilir: <strong>gecikme (lag)</strong> bir hafta önceki değeri, <strong>hareketli ortalama (rolling)</strong> son dönemin ortalamasını, <strong>üstel ağırlıklı ortalama (EWM)</strong> ise yakın geçmişe daha fazla ağırlık veren bir ortalamayı modele taşır. Ayrıca eğitim ve test ayrımı tarihe göre yapılır, yoksa model geleceği görmüş olur.</span><span class="en">Predicting what comes next by reading what came before. A series’ strongest clue is its own history, so you derive features for it: a <strong>lag</strong> carries last week’s value into the model, a <strong>rolling mean</strong> carries the recent average, and an <strong>exponentially weighted mean (EWM)</strong> carries an average that leans on the recent past. The train and test split has to follow the calendar, otherwise the model gets to see the future.</span></div>
+          <ul><li class="tr">gecikme değişkenleri</li><li class="en">lag features</li><li class="tr">hareketli ortalama</li><li class="en">rolling mean</li><li>EWM</li><li>SMAPE</li><li class="tr">zaman bazlı bölme</li><li class="en">time-based split</li></ul>
         </div>
         <div>
           <h4><span class="tr">İş analitiği</span><span class="en">Business analytics</span></h4>
-          <div class="ev"><span class="tr">RFM ve CLTV modelleri, A/B testi ve hipotez testleri, birliktelik kuralları, kural tabanlı sınıflandırma. Modelden önce sorulması gereken soru hangisi, onu ayırt etmek.</span><span class="en">RFM and CLTV models, A/B and hypothesis testing, association rules, rule-based classification. Knowing which question comes before the model.</span></div>
-          <ul><li>RFM</li><li>BG-NBD</li><li>Gamma-Gamma</li><li>A/B test</li><li class="tr">hipotez testi</li><li class="en">hypothesis testing</li><li>Apriori</li></ul>
+          <div class="ev"><span class="tr">Model kurmadan önce doğru sorunun ne olduğunu bulmak. Müşteri değerini hesaplama (RFM, CLTV), iki seçenekten hangisinin gerçekten daha iyi olduğunu sınama (A/B testi ve hipotez testleri), birlikte satın alınan ürünleri bulma ve kural tabanlı sınıflandırma üzerine çalıştım.</span><span class="en">Finding the right question before building a model. I have worked on measuring customer value (RFM, CLTV), testing whether one option is genuinely better than another (A/B and hypothesis testing), finding products bought together, and rule-based classification.</span></div>
+          <ul><li>RFM</li><li>CLTV</li><li>BG-NBD</li><li>A/B test</li><li class="tr">hipotez testi</li><li class="en">hypothesis testing</li><li>Apriori</li></ul>
         </div>
         <div>
-          <h4><span class="tr">Mühendislik pratiği</span><span class="en">Engineering practice</span></h4>
-          <div class="ev"><span class="tr">On yıllık mühendislik alışkanlıkları: ölçmeden iddia etmemek, kök nedene inmek, yaptığını belgelemek. Git tarafında ayrı dal, pull request ve kod incelemesiyle çalışıyorum. P-07'de beş kişilik ekiple böyle yürüdü.</span><span class="en">Ten years of engineering habits: no claim without a measurement, trace it to root cause, document what you did. On Git I work with branches, pull requests and code review; that is how P-07 ran with a team of five.</span></div>
-          <ul><li>Git</li><li>GitHub</li><li class="tr">dal · PR · inceleme</li><li class="en">branch · PR · review</li><li>Jupyter</li><li>PyCharm</li><li>RCA · 8D</li><li>FMEA</li><li class="tr">kök neden analizi</li><li class="en">root cause analysis</li></ul>
+          <h4><span class="tr">Mühendislik tecrübesi</span><span class="en">Engineering experience</span></h4>
+          <div class="ev"><span class="tr">On yıl boyunca uluslararası ekiplerle, OEM ve tedarikçi firmalar arasında proje yürüttüm. Zaman planı kurmak ve takip etmek, teknik bir kararı farklı disiplinlerden insanlara anlatıp ikna etmek, hat durduğunda soğukkanlı kalmak ve bir sorunun kök nedenine inmek bu işin günlük parçasıydı. Veri biliminde de işin yarısı aynı: sonucu kimin kullanacağını bilmek ve anlatabilmek.</span><span class="en">For ten years I ran projects with international teams, between OEMs and suppliers. Building and holding a schedule, explaining a technical decision to people from other disciplines and winning them over, staying calm when a line stops, and tracing a problem to its root cause were the daily part of that work. Half of data science is the same: knowing who will use the result, and being able to explain it.</span></div>
+          <ul><li class="tr">proje yönetimi</li><li class="en">project management</li><li class="tr">ekip çalışması</li><li class="en">teamwork</li><li class="tr">zaman planı</li><li class="en">scheduling</li><li class="tr">paydaş iletişimi</li><li class="en">stakeholder communication</li><li class="tr">kök neden analizi</li><li class="en">root cause analysis</li><li>Jira</li><li>in-STEP</li><li>Git</li><li>GitHub</li><li>8D</li><li>FMEA</li></ul>
         </div>
       </div>
     </div>
@@ -231,8 +230,8 @@
     </div>
     <div>
       <p class="lede">
-        <span class="tr">İzmir'deyim, veri analisti ve veri bilimci rollerine açığım. Üretim, otomotiv ve lojistik verisiyle çalışan ekiplerde alan bilgimin doğrudan karşılığı var.</span>
-        <span class="en">I am in İzmir and open to data analyst and data scientist roles. In teams working with manufacturing, automotive or logistics data, my domain background pays for itself immediately.</span>
+        <span class="tr">İzmir’deyim ve taşınmaya açığım. Veri analisti ve veri bilimci rollerini değerlendiriyorum. Otomotiv geçmişim var, bu yüzden üretim, otomotiv ve lojistik verisiyle çalışan ekiplerde alan bilgimin doğrudan karşılığı var.</span>
+        <span class="en">Based in İzmir and open to relocation. I am considering data analyst and data scientist roles. My background is in automotive, so in teams working with manufacturing, automotive or logistics data that domain knowledge pays for itself immediately.</span>
       </p>
       <div class="contact-grid">
         <a href="mailto:busr.ercan@gmail.com"><span><span class="lbl">e-posta</span><span class="val2">busr.ercan@gmail.com</span></span></a>
@@ -258,7 +257,6 @@
     <!-- ---------- P-01 ---------- -->
     <article class="project">
       <div class="project-head">
-        <span class="ref">P-01</span>
         <h3><span class="tr">İkinci El Araç Fiyat Tahmini</span><span class="en">Used Car Price Prediction</span></h3>
         <span class="domain tr">regresyon · otomotiv</span><span class="domain en">regression · automotive</span>
       </div>
@@ -339,7 +337,6 @@
     <!-- ---------- P-02 ---------- -->
     <article class="project">
       <div class="project-head">
-        <span class="ref">P-02</span>
         <h3><span class="tr">Müşteri Kaybı Tahmini</span><span class="en">Customer Churn Prediction</span></h3>
         <span class="domain tr">dengesiz sınıflandırma · telekom</span><span class="domain en">imbalanced classification · telecom</span>
       </div>
@@ -411,7 +408,6 @@
     <!-- ---------- P-03 ---------- -->
     <article class="project">
       <div class="project-head">
-        <span class="ref">P-03</span>
         <h3><span class="tr">İşlem Hacmi Tahminleme</span><span class="en">Transaction Volume Forecasting</span></h3>
         <span class="domain tr">zaman serisi · ödeme sistemleri</span><span class="domain en">time series · payments</span>
       </div>
@@ -472,7 +468,6 @@
     <!-- ---------- P-04 ---------- -->
     <article class="project">
       <div class="project-head">
-        <span class="ref">P-04</span>
         <h3><span class="tr">Müşteri Segmentasyonu</span><span class="en">Customer Segmentation</span></h3>
         <span class="domain tr">kümeleme · perakende</span><span class="domain en">clustering · retail</span>
       </div>
@@ -522,7 +517,6 @@
     <!-- ---------- P-05 ---------- -->
     <article class="project">
       <div class="project-head">
-        <span class="ref">P-05</span>
         <h3><span class="tr">Oyuncu Potansiyeli Sınıflandırması</span><span class="en">Player Potential Classification</span></h3>
         <span class="domain tr">sınıflandırma · spor analitiği</span><span class="domain en">classification · sports analytics</span>
       </div>
@@ -586,7 +580,6 @@
     <!-- ---------- P-06 ---------- -->
     <article class="project">
       <div class="project-head">
-        <span class="ref">P-06</span>
         <h3><span class="tr">Konut Fiyat Tahmini</span><span class="en">House Price Prediction</span></h3>
         <span class="domain tr">regresyon · 79 değişken</span><span class="domain en">regression · 79 features</span>
       </div>
@@ -642,7 +635,6 @@
     <!-- ---------- P-07 ---------- -->
     <article class="project">
       <div class="project-head">
-        <span class="ref">P-07</span>
         <h3>Data-Insight Agent</h3>
         <span class="domain tr">ekip projesi · 5 kişi · Ocak 2026</span><span class="domain en">team project · 5 people · January 2026</span>
       </div>
@@ -760,7 +752,6 @@
 
       <article class="project">
         <div class="project-head">
-          <span class="ref">Ü-01</span>
           <h3>reytingim</h3>
           <span class="domain tr">yerel SEO · SaaS</span><span class="domain en">local SEO · SaaS</span>
         </div>
@@ -780,7 +771,6 @@
 
       <article class="project">
         <div class="project-head">
-          <span class="ref">Ü-02</span>
           <h3>Mix-up</h3>
           <span class="domain tr">CRM · monorepo</span><span class="domain en">CRM · monorepo</span>
         </div>
@@ -797,7 +787,6 @@
 
       <article class="project">
         <div class="project-head">
-          <span class="ref">Ü-03</span>
           <h3><span class="tr">Yerel platform + otomasyon</span><span class="en">Local platform + automation</span></h3>
           <span class="domain tr">iş akışı otomasyonu</span><span class="domain en">workflow automation</span>
         </div>
