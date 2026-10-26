@@ -406,3 +406,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 .status.live{color:var(--primary);border-color:color-mix(in srgb,var(--primary) 38%,var(--line))}
 .status.live::before{background:var(--primary)}
 .status.dev::before{background:var(--signal)}
+
+/* ---------- proje grubu ayracı ---------- */
+.group-sep{
+  margin:46px 0 0;padding-top:22px;
+  border-top:2px solid var(--line);
+}
+.group-sep h4{color:var(--signal)}
