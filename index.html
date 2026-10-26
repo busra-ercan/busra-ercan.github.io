@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Büşra Ercan — Veri Bilimci & Elektrik-Elektronik Mühendisi</title>
+<meta name="description" content="Veri bilimci ve elektrik-elektronik mühendisi. On yıl otomotiv elektrik sistemleri deneyimi, Python, makine öğrenmesi, zaman serisi tahminleme ve müşteri analitiği projeleri. İzmir.">
+<meta property="og:title" content="Büşra Ercan — Veri Bilimci & Elektrik-Elektronik Mühendisi">
+<meta property="og:description" content="On yıl otomotiv mühendisliği, şimdi veri bilimi. Uçtan uca ML projeleri, gerçek metriklerle.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2314232E'/><path d='M4 16h8c2 0 2-7 4-7s2 14 4 14 2-7 4-7h4' stroke='%23C77D00' stroke-width='2.4' fill='none' stroke-linecap='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Büşra Ercan</a>
+    <nav>
+      <a href="#projects"><span class="tr">Projeler</span><span class="en">Projects</span></a>
+      <a href="#skills"><span class="tr">Yetkinlik</span><span class="en">Skills</span></a>
+      <a href="#products"><span class="tr">Ürünler</span><span class="en">Products</span></a>
+      <a href="#background"><span class="tr">Geçmiş</span><span class="en">Background</span></a>
+      <a href="#contact"><span class="tr">İletişim</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <button class="btn-ghost" id="lang" type="button" aria-label="Dili değiştir / Switch language">EN</button>
+      <button class="btn-ghost" id="theme" type="button" aria-label="Temayı değiştir / Switch theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Büşra Ercan</h1>
+    <div class="role">
+      <span class="tr">Veri Bilimci · Elektrik-Elektronik Mühendisi</span>
+      <span class="en">Data Scientist · Electrical &amp; Electronics Engineer</span>
+    </div>
+    <div class="where">
+      <span>İzmir, Türkiye</span><span class="tr">İngilizce: akıcı</span><span class="en">English: fluent</span><span class="tr">Yeni rollere açık</span><span class="en">Open to new roles</span>
+    </div>
+
+    <p class="lede">
+      <span class="tr">On yıl boyunca araçlarda sinyalleri okudum: CAN hattında arıza izi sürdüm, kablo demeti tasarladım, üretim hattında kök neden aradım. Mühendislikte veri zaten işin kendisiydi. Şimdi aynı disiplini veri bilimine uyguluyorum — aynı titizlik, daha geniş bir veri kümesi.</span>
+      <span class="en">For ten years I read signals inside vehicles: traced faults on the CAN bus, designed wiring harnesses, hunted root causes on the production line. In engineering, data was already the job. Now I apply the same discipline to data science — same rigour, a wider dataset.</span>
+    </p>
+
+    <div class="schematic" aria-hidden="true">
+      <svg viewBox="0 0 1000 212" role="img">
+        <!-- giriş hatları: mühendislik tarafı -->
+        <g fill="none" stroke="var(--line)" stroke-width="1.4">
+          <path d="M148 34 H300 C352 34 358 96 410 96"/>
+          <path d="M148 75 H300 C352 75 358 96 410 96"/>
+          <path d="M148 116 H300 C352 116 358 96 410 96"/>
+          <path d="M148 157 H300 C352 157 358 96 410 96"/>
+        </g>
+        <!-- gövde -->
+        <path d="M410 96 H590" fill="none" stroke="var(--ink-3)" stroke-width="2.2"/>
+        <!-- çıkış hatları: veri tarafı -->
+        <g fill="none" stroke="var(--line)" stroke-width="1.4">
+          <path d="M590 96 C642 96 648 54 700 54 H852"/>
+          <path d="M590 96 H852"/>
+          <path d="M590 96 C642 96 648 138 700 138 H852"/>
+        </g>
+
+        <!-- sinyal: bir kez soldan sağa akar -->
+        <path class="pulse" d="M148 75 H300 C352 75 358 96 410 96 H590 C642 96 648 54 700 54 H852"/>
+
+        <!-- düğümler -->
+        <g fill="var(--paper)" stroke="var(--ink-3)" stroke-width="2">
+          <circle cx="410" cy="96" r="5.5"/>
+          <circle cx="590" cy="96" r="5.5"/>
+        </g>
+        <g fill="var(--line)">
+          <circle cx="148" cy="34" r="2.6"/><circle cx="148" cy="75" r="2.6"/>
+          <circle cx="148" cy="116" r="2.6"/><circle cx="148" cy="157" r="2.6"/>
+          <circle cx="852" cy="54" r="2.6"/><circle cx="852" cy="96" r="2.6"/>
+          <circle cx="852" cy="138" r="2.6"/>
+        </g>
+
+        <!-- etiketler -->
+        <g class="sch-lab" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">
+          <text x="138" y="38">CAN · LIN · J1939 · UDS</text>
+          <text x="138" y="79">HV / LV harness</text>
+          <text x="138" y="120">ISO 26262 · FMEA</text>
+          <text x="138" y="161" class="tr">üretim hattı · PPAP · 8D</text>
+          <text x="138" y="161" class="en">production line · PPAP · 8D</text>
+        </g>
+        <g class="sch-lab" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">
+          <text x="862" y="58" class="tr">tahmin</text>
+          <text x="862" y="58" class="en">prediction</text>
+          <text x="862" y="100" class="tr">segment</text>
+          <text x="862" y="100" class="en">segments</text>
+          <text x="862" y="142" class="tr">öngörü</text>
+          <text x="862" y="142" class="en">forecast</text>
+        </g>
+        <g class="sch-lab" text-anchor="middle" font-family="IBM Plex Sans Condensed, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink-3)">
+          <text x="500" y="84" class="tr">ÖZELLİK MÜHENDİSLİĞİ · MODEL · DOĞRULAMA</text>
+          <text x="500" y="84" class="en">FEATURE ENGINEERING · MODEL · VALIDATION</text>
+        </g>
+        <g class="sch-lab" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--ink-3)" opacity=".75">
+          <text x="148" y="190" class="tr">2015 — 2025 · otomotiv</text>
+          <text x="148" y="190" class="en">2015 — 2025 · automotive</text>
+          <text x="852" y="190" text-anchor="end" class="tr">2024 — · veri bilimi</text>
+          <text x="852" y="190" text-anchor="end" class="en">2024 — · data science</text>
+        </g>
+      </svg>
+      <p class="sch-legend small muted">
+        <span class="tr">CAN · LIN · J1939 · kablo demeti · ISO 26262 · üretim hattı → özellik mühendisliği · model · doğrulama → tahmin · segment · öngörü</span>
+        <span class="en">CAN · LIN · J1939 · harness · ISO 26262 · production line → feature engineering · model · validation → prediction · segments · forecast</span>
+      </p>
+    </div>
+
+    <div class="readout">
+      <div><div class="v">10</div><div class="k"><span class="tr">yıl otomotiv mühendisliği</span><span class="en">years automotive engineering</span></div></div>
+      <div><div class="v">16</div><div class="k"><span class="tr">public Kaggle notebook</span><span class="en">public Kaggle notebooks</span></div></div>
+      <div><div class="v">2.326<span style="font-size:.62em;color:var(--ink-3)"> / 59.254</span></div><div class="k"><span class="tr">Kaggle Notebooks Expert sıralaması</span><span class="en">Kaggle Notebooks Expert rank</span></div></div>
+      <div><div class="v">6</div><div class="k"><span class="tr">uçtan uca ML projesi</span><span class="en">end-to-end ML projects</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJELER ============ -->
+<section id="projects">
+  <div class="wrap row">
+    <div class="rail">
+      <div class="sheet">01</div>
+      <h2><span class="tr">Projeler</span><span class="en">Projects</span></h2>
+      <p class="note"><span class="tr">Altı proje, uçtan uca. Her biri gerçek veriyle, kendi yazdığım fonksiyonlarla ve ölçülmüş sonuçlarla.</span><span class="en">Six projects, end to end. Real data, functions I wrote myself, measured results.</span></p>
+    </div>
+
+    <div>
+
+    <!-- ---------- P-01 ---------- -->
+    <article class="project">
+      <div class="project-head">
+        <span class="ref">P-01</span>
+        <h3><span class="tr">İkinci El Araç Fiyat Tahmini</span><span class="en">Used Car Price Prediction</span></h3>
+        <span class="domain tr">regresyon · otomotiv</span><span class="domain en">regression · automotive</span>
+      </div>
+      <p class="muted small" style="max-width:66ch">
+        <span class="tr">Birleşik Krallık ikinci el araç ilanları. Bir araç ilana çıkmadan önce piyasa fiyatı ne olmalı?</span>
+        <span class="en">UK used-car listings. What should a vehicle be priced at before it goes live?</span>
+      </p>
+
+      <div class="metrics">
+        <div><div class="v">0,918</div><div class="k">R²</div></div>
+        <div><div class="v">£1.738</div><div class="k">MAE</div></div>
+        <div><div class="v">£2.802</div><div class="k">RMSE</div></div>
+        <div><div class="v">7</div><div class="k"><span class="tr">model karşılaştırıldı</span><span class="en">models compared</span></div></div>
+      </div>
+
+      <div class="pgrid">
+        <div>
+          <h4><span class="tr">Ne yaptım</span><span class="en">What I did</span></h4>
+          <ul class="did">
+            <li><span class="tr">Marka bazlı ayrı dosyaları tek veri setinde birleştirdim, tutarsız kategori etiketlerini normalize ettim.</span><span class="en">Merged per-brand files into one dataset and normalised inconsistent category labels.</span></li>
+            <li><span class="tr">Araç yaşı, yıllık ortalama kilometre, yaş×km etkileşimi ve segment bazlı değişkenler türettim.</span><span class="en">Engineered vehicle age, annual mileage, an age×mileage interaction and segment-level features.</span></li>
+            <li><span class="tr">Fiyat dağılımı sağa çarpık olduğu için hedefi log ölçeğine aldım — pahalı araçlardaki hata artık ucuz araçları ezmiyor.</span><span class="en">Log-transformed the skewed price target, so error on expensive cars no longer drowns out the cheap ones.</span></li>
+            <li><span class="tr">Tüm ön işlemeyi <span class="num">Pipeline</span> + <span class="num">ColumnTransformer</span> içine koydum: eğitim ile doğrulama arasında veri sızıntısı yok.</span><span class="en">Put all preprocessing inside a <span class="num">Pipeline</span> + <span class="num">ColumnTransformer</span>, so no information leaks from validation into training.</span></li>
+            <li><span class="tr">Yedi modeli aynı çapraz doğrulama kurgusunda karşılaştırdım, kazananı Optuna ile optimize ettim.</span><span class="en">Compared seven models under one cross-validation setup, then tuned the winner with Optuna.</span></li>
+            <li><span class="tr">Sonucu log'dan sterline geri çevirdim — model artık iş biriminin konuştuğu birimde rapor veriyor.</span><span class="en">Converted results back from log scale to pounds, so the model reports in the unit the business speaks.</span></li>
+          </ul>
+          <div class="stack"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>LightGBM</span><span>XGBoost</span><span>Optuna</span><span>Matplotlib</span></div>
+          <div class="links"><a href="https://www.kaggle.com/code/busraercan/car-price-predict-project" target="_blank" rel="noopener">Kaggle notebook ↗</a></div>
+        </div>
+
+        <figure class="chart">
+          <div class="chart-title"><span class="tr">Model karşılaştırması</span><span class="en">Model comparison</span></div>
+          <div class="chart-sub"><span class="tr">Test seti ortalama hatası, sterlin. Kısa olan iyi.</span><span class="en">Test-set error in pounds. Shorter is better.</span></div>
+          <svg viewBox="0 0 430 268" class="hit">
+            <g class="gridline"><line x1="163.5" y1="12" x2="163.5" y2="232"/><line x1="219" y1="12" x2="219" y2="232"/><line x1="274.4" y1="12" x2="274.4" y2="232"/><line x1="329.8" y1="12" x2="329.8" y2="232"/></g>
+            <g class="ax" text-anchor="end">
+              <text x="104" y="30.5">LGBM + Optuna</text><text x="104" y="62.5">LightGBM</text><text x="104" y="94.5">Random Forest</text><text x="104" y="126.5">XGBoost</text><text x="104" y="158.5">HistGB</text><text x="104" y="190.5">Decision Tree</text><text x="104" y="222.5">Linear Reg.</text>
+            </g>
+            <g>
+              <path d="M108,18 h151 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-151 Z" fill="var(--signal)" data-tip="LightGBM + Optuna — RMSE £2.802 · MAE £1.738 · R² 0,918" data-tip-en="LightGBM + Optuna — RMSE £2,802 · MAE £1,738 · R² 0.918"/>
+              <path d="M108,50 h154 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-154 Z" fill="var(--c1)" data-tip="LightGBM — RMSE £2.855 · R² 0,915" data-tip-en="LightGBM — RMSE £2,855 · R² 0.915"/>
+              <path d="M108,82 h158 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-158 Z" fill="var(--c1)" data-tip="Random Forest — RMSE £2.922 · R² 0,911" data-tip-en="Random Forest — RMSE £2,922 · R² 0.911"/>
+              <path d="M108,114 h161 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-161 Z" fill="var(--c1)" data-tip="XGBoost — RMSE £2.976 · R² 0,908" data-tip-en="XGBoost — RMSE £2,976 · R² 0.908"/>
+              <path d="M108,146 h165 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-165 Z" fill="var(--c1)" data-tip="HistGradientBoosting — RMSE £3.056 · R² 0,903" data-tip-en="HistGradientBoosting — RMSE £3,056 · R² 0.903"/>
+              <path d="M108,178 h196 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-196 Z" fill="var(--c1)" data-tip="Decision Tree — RMSE £3.600 · R² 0,865" data-tip-en="Decision Tree — RMSE £3,600 · R² 0.865"/>
+              <path d="M108,210 h227 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-227 Z" fill="var(--c1)" data-tip="Linear Regression — RMSE £4.160 · R² 0,820" data-tip-en="Linear Regression — RMSE £4,160 · R² 0.820"/>
+            </g>
+            <g class="val"><text x="270" y="30.5">£2.802</text><text x="273" y="62.5">£2.855</text><text x="277" y="94.5">£2.922</text><text x="280" y="126.5">£2.976</text><text x="284" y="158.5">£3.056</text><text x="315" y="190.5">£3.600</text><text x="346" y="222.5">£4.160</text></g>
+            <line class="axisline" x1="108" y1="232" x2="352" y2="232"/>
+            <g class="ax" text-anchor="middle"><text x="108" y="246">0</text><text x="163.5" y="246">£1k</text><text x="219" y="246">£2k</text><text x="274.4" y="246">£3k</text><text x="329.8" y="246">£4k</text></g>
+            <text class="axlab tr" x="108" y="263">RMSE — düşük olan iyi</text><text class="axlab en" x="108" y="263">RMSE — lower is better</text>
+          </svg>
+          <figcaption><span class="tr">Kehribar renkli çubuk, son olarak seçtiğim model. Optuna optimizasyonu RMSE'yi £53 daha düşürdü — küçük ama doğrulama setinde tutarlı bir kazanç.</span><span class="en">The amber bar is the model I shipped. Optuna tuning took a further £53 off RMSE — small, but consistent across validation folds.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ---------- P-02 ---------- -->
+    <article class="project">
+      <div class="project-head">
+        <span class="ref">P-02</span>
+        <h3><span class="tr">Müşteri Kaybı Tahmini</span><span class="en">Customer Churn Prediction</span></h3>
+        <span class="domain tr">dengesiz sınıflandırma · telekom</span><span class="domain en">imbalanced classification · telecom</span>
+      </div>
+      <p class="muted small" style="max-width:66ch">
+        <span class="tr">Ayrılacak müşteriyi önceden bulmak. Burada doğruluk yanıltıcı: hiç kimse ayrılmayacak diyen bir model bile yaklaşık %73 doğru çıkar. Asıl soru, ayrılacakların kaçını yakaladığımız.</span>
+        <span class="en">Finding customers about to leave. Accuracy misleads here: a model that predicts "nobody churns" still scores about 73%. The real question is how many leavers you catch.</span>
+      </p>
+
+      <div class="metrics">
+        <div><div class="v">0,651</div><div class="k">F1</div></div>
+        <div><div class="v">0,855</div><div class="k">ROC-AUC</div></div>
+        <div><div class="v">0,684</div><div class="k">Recall</div></div>
+        <div><div class="v">0,622</div><div class="k">Precision</div></div>
+      </div>
+
+      <div class="pgrid">
+        <div>
+          <h4><span class="tr">Ne yaptım</span><span class="en">What I did</span></h4>
+          <ul class="did">
+            <li><span class="tr">Temel modelde recall %56'da kaldı: ayrılacak müşterilerin neredeyse yarısını kaçırıyordu.</span><span class="en">The baseline stalled at 56% recall — it missed almost half the customers who left.</span></li>
+            <li><span class="tr">Kayıp fonksiyonuna sınıf ağırlığı verdim. Recall %69'a çıktı, doğruluk bilerek düştü.</span><span class="en">Weighted the loss function by class. Recall rose to 69%; accuracy dropped on purpose.</span></li>
+            <li><span class="tr">Erken durdurmayı <span class="num">val_loss</span> yerine AUC ile izledim: recall %81. Ama precision %52'ye indi — yakalanan her müşteri için iki yanlış alarm.</span><span class="en">Monitored early stopping on AUC instead of <span class="num">val_loss</span>: recall hit 81%, but precision fell to 52% — two false alarms for every real leaver.</span></li>
+            <li><span class="tr">Random search ile dengeyi kurdum. Kampanya bütçesi sınırlıysa aranan nokta burası: F1 0,651, AUC 0,855.</span><span class="en">Used random search to settle the balance. With a limited retention budget this is the point you want: F1 0.651, AUC 0.855.</span></li>
+            <li><span class="tr">Son modeli scaler'ıyla birlikte kaydettim ve yeni müşteri için tahmin akışını yazdım — notebook'ta kalmadı.</span><span class="en">Saved the final model together with its scaler and wrote the prediction path for new customers — it did not stay in the notebook.</span></li>
+          </ul>
+          <div class="stack"><span>TensorFlow</span><span>Keras</span><span>Keras&nbsp;Tuner</span><span>scikit-learn</span><span>pandas</span></div>
+          <div class="links"><a href="https://www.kaggle.com/code/busraercan/telco-churn-analysis-ml" target="_blank" rel="noopener">Kaggle notebook ↗</a><a href="https://github.com/busra-ercan/TelcoChurn" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+
+        <figure class="chart">
+          <div class="chart-title"><span class="tr">Dört denemede precision–recall dengesi</span><span class="en">The precision–recall trade across four runs</span></div>
+          <div class="chart-sub"><span class="tr">Doğrulama seti. Her adımda bir şeyi kazandım, başka bir şeyi verdim.</span><span class="en">Validation set. Each step gained one thing and gave up another.</span></div>
+          <div class="legend"><span><i style="background:var(--c3)"></i>Precision</span><span><i style="background:var(--c2)"></i>Recall</span></div>
+          <svg viewBox="0 0 430 274" class="hit">
+            <g class="gridline"><line x1="46" y1="210" x2="414" y2="210"/><line x1="46" y1="162.5" x2="414" y2="162.5"/><line x1="46" y1="115" x2="414" y2="115"/><line x1="46" y1="67.5" x2="414" y2="67.5"/><line x1="46" y1="20" x2="414" y2="20"/></g>
+            <g class="ax" text-anchor="end"><text x="40" y="214">0</text><text x="40" y="166.5">0,25</text><text x="40" y="119">0,50</text><text x="40" y="71.5">0,75</text><text x="40" y="24">1,00</text></g>
+            <g fill="var(--c3)">
+              <rect x="64" y="81.6" width="26" height="128.4" rx="3" data-tip="Temel model · Precision 0,676" data-tip-en="Baseline · Precision 0.676"/>
+              <rect x="156" y="101.5" width="26" height="108.5" rx="3" data-tip="Ağırlıklı kayıp · Precision 0,571" data-tip-en="Weighted loss · Precision 0.571"/>
+              <rect x="248" y="110.8" width="26" height="99.2" rx="3" data-tip="AUC izleme · Precision 0,522" data-tip-en="AUC monitor · Precision 0.522"/>
+              <rect x="340" y="91.8" width="26" height="118.2" rx="3" data-tip="Random search · Precision 0,622" data-tip-en="Random search · Precision 0.622"/>
+            </g>
+            <g fill="var(--c2)">
+              <rect x="94" y="103.6" width="26" height="106.4" rx="3" data-tip="Temel model · Recall 0,560" data-tip-en="Baseline · Recall 0.560"/>
+              <rect x="186" y="78.5" width="26" height="131.5" rx="3" data-tip="Ağırlıklı kayıp · Recall 0,692" data-tip-en="Weighted loss · Recall 0.692"/>
+              <rect x="278" y="56.1" width="26" height="153.9" rx="3" data-tip="AUC izleme · Recall 0,810" data-tip-en="AUC monitor · Recall 0.810"/>
+              <rect x="370" y="80" width="26" height="130" rx="3" data-tip="Random search · Recall 0,684" data-tip-en="Random search · Recall 0.684"/>
+            </g>
+            <g class="val" text-anchor="middle" font-size="10.5">
+              <text x="77" y="77">,676</text><text x="169" y="97">,571</text><text x="261" y="106">,522</text><text x="353" y="87">,622</text>
+              <text x="107" y="99">,560</text><text x="199" y="74">,692</text><text x="291" y="51.5">,810</text><text x="383" y="75.5">,684</text>
+            </g>
+            <line class="axisline" x1="46" y1="210" x2="414" y2="210"/>
+            <g class="ax" text-anchor="middle">
+              <text x="92" y="226" class="tr">Temel</text><text x="92" y="226" class="en">Baseline</text>
+              <text x="184" y="226" class="tr">Ağırlıklı</text><text x="184" y="226" class="en">Weighted</text>
+              <text x="184" y="238" class="tr">kayıp</text><text x="184" y="238" class="en">loss</text>
+              <text x="276" y="226" class="tr">+ AUC</text><text x="276" y="226" class="en">+ AUC</text>
+              <text x="276" y="238" class="tr">izleme</text><text x="276" y="238" class="en">monitor</text>
+              <text x="368" y="226">Random</text><text x="368" y="238">search</text>
+            </g>
+            <text class="axlab tr" x="46" y="262">Seçtiğim model: random search — F1 0,651 · AUC 0,855</text><text class="axlab en" x="46" y="262">Model shipped: random search — F1 0.651 · AUC 0.855</text>
+          </svg>
+          <figcaption><span class="tr">En yüksek recall en iyi model değil. Üçüncü denemede ayrılacakların %81'ini yakalıyorum ama ekibi iki kat yanlış alarmla meşgul ediyorum. Dördüncüsü, sınırlı bütçeyle çalışan bir elde tutma ekibi için doğru nokta.</span><span class="en">Highest recall is not the best model. Run three catches 81% of leavers but buries the team in false alarms. Run four is the right point for a retention team working to a budget.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ---------- P-03 ---------- -->
+    <article class="project">
+      <div class="project-head">
+        <span class="ref">P-03</span>
+        <h3><span class="tr">İşlem Hacmi Tahminleme</span><span class="en">Transaction Volume Forecasting</span></h3>
+        <span class="domain tr">zaman serisi · ödeme sistemleri</span><span class="domain en">time series · payments</span>
+      </div>
+      <p class="muted small" style="max-width:66ch">
+        <span class="tr">Üye iş yeri bazında günlük işlem hacmini önceden bilmek — kapasite, nakit akışı ve personel planlaması için.</span>
+        <span class="en">Predicting daily transaction volume per merchant — for capacity, cash flow and staffing.</span>
+      </p>
+
+      <div class="metrics">
+        <div><div class="v">%2,10</div><div class="k"><span class="tr">SMAPE (doğrulama)</span><span class="en">SMAPE (validation)</span></div></div>
+        <div><div class="v">%1,19</div><div class="k"><span class="tr">SMAPE (eğitim)</span><span class="en">SMAPE (train)</span></div></div>
+        <div><div class="v">1.000</div><div class="k"><span class="tr">boosting iterasyonu</span><span class="en">boosting iterations</span></div></div>
+      </div>
+
+      <div class="pgrid">
+        <div>
+          <h4><span class="tr">Ne yaptım</span><span class="en">What I did</span></h4>
+          <ul class="did">
+            <li><span class="tr">Gecikme (lag), hareketli ortalama ve üstel ağırlıklı ortalama değişkenleri türettim — serinin kendi geçmişi en güçlü sinyal.</span><span class="en">Built lag, rolling-mean and exponentially-weighted features — a series' own history is the strongest signal it has.</span></li>
+            <li><span class="tr">Takvim değişkenleri ekledim: haftanın günü, ay, yıl sonu, özel günler.</span><span class="en">Added calendar features: day of week, month, year-end and special days.</span></li>
+            <li><span class="tr">Eğitim/doğrulama ayrımını tarihe göre yaptım. Rastgele bölseydim model geleceği görmüş olurdu — zaman serisinde en sık yapılan hata bu.</span><span class="en">Split train and validation by date. A random split would let the model see the future — the commonest mistake in time series.</span></li>
+            <li><span class="tr">SMAPE'i LightGBM'e özel değerlendirme fonksiyonu olarak tanımladım, böylece model doğrudan raporlanacak metriği optimize etti.</span><span class="en">Defined SMAPE as a custom evaluation function in LightGBM, so the model optimised the metric that actually gets reported.</span></li>
+            <li><span class="tr">Erken durdurma ile eğitim/doğrulama açıklığını izledim: 600. iterasyondan sonra doğrulama hatası düzleşiyor, eğitim hatası düşmeye devam ediyor.</span><span class="en">Watched the train/validation gap with early stopping: past iteration 600 validation flattens while training keeps improving.</span></li>
+          </ul>
+          <div class="stack"><span>LightGBM</span><span>pandas</span><span>NumPy</span><span class="tr">zaman serisi CV</span><span class="en">time-series CV</span></div>
+          <div class="links"><a href="https://www.kaggle.com/code/busraercan/time-series-forecasting-of-transaction-volume-iyz" target="_blank" rel="noopener">Kaggle notebook ↗</a><a href="https://www.kaggle.com/code/busraercan/store-item-demand-forecasting-challenge" target="_blank" rel="noopener"><span class="tr">İlgili: talep tahminleme ↗</span><span class="en">Related: demand forecasting ↗</span></a></div>
+        </div>
+
+        <figure class="chart">
+          <div class="chart-title"><span class="tr">Hata nerede düzleşiyor?</span><span class="en">Where the error flattens</span></div>
+          <div class="chart-sub"><span class="tr">200. iterasyondan sonrası. Düşük olan iyi.</span><span class="en">From iteration 200 onward. Lower is better.</span></div>
+          <div class="legend"><span><i style="background:var(--c1)"></i><span class="tr">doğrulama</span><span class="en">validation</span></span><span><i style="background:var(--c4)"></i><span class="tr">eğitim</span><span class="en">training</span></span></div>
+          <svg viewBox="0 0 430 250" class="hit">
+            <g class="gridline"><line x1="52" y1="200" x2="414" y2="200"/><line x1="52" y1="157.5" x2="414" y2="157.5"/><line x1="52" y1="115" x2="414" y2="115"/><line x1="52" y1="72.5" x2="414" y2="72.5"/><line x1="52" y1="30" x2="414" y2="30"/></g>
+            <g class="ax" text-anchor="end"><text x="46" y="204">0</text><text x="46" y="161.5">%1</text><text x="46" y="119">%2</text><text x="46" y="76.5">%3</text><text x="46" y="34">%4</text></g>
+            <polyline fill="none" stroke="var(--c4)" stroke-width="2" stroke-linejoin="round" points="52,39.9 96,103.4 140,123 184,132.6 228,138.6 272,141.7 316,144.9 360,147.4 404,149.5"/>
+            <polyline fill="none" stroke="var(--c1)" stroke-width="2" stroke-linejoin="round" points="52,55.6 96,83.6 140,93.9 184,99.6 228,104.8 272,106.7 316,108.8 360,109.9 404,110.8"/>
+            <g fill="var(--c4)" stroke="var(--surface)" stroke-width="2">
+              <circle cx="52" cy="39.9" r="3.5" data-tip="it 200 · eğitim %3,77" data-tip-en="iter 200 · training 3.77%"/><circle cx="96" cy="103.4" r="3.5" data-tip="it 300 · eğitim %2,27" data-tip-en="iter 300 · training 2.27%"/><circle cx="140" cy="123" r="3.5" data-tip="it 400 · eğitim %1,81" data-tip-en="iter 400 · training 1.81%"/><circle cx="184" cy="132.6" r="3.5" data-tip="it 500 · eğitim %1,59" data-tip-en="iter 500 · training 1.59%"/><circle cx="228" cy="138.6" r="3.5" data-tip="it 600 · eğitim %1,45" data-tip-en="iter 600 · training 1.45%"/><circle cx="272" cy="141.7" r="3.5" data-tip="it 700 · eğitim %1,37" data-tip-en="iter 700 · training 1.37%"/><circle cx="316" cy="144.9" r="3.5" data-tip="it 800 · eğitim %1,30" data-tip-en="iter 800 · training 1.30%"/><circle cx="360" cy="147.4" r="3.5" data-tip="it 900 · eğitim %1,24" data-tip-en="iter 900 · training 1.24%"/><circle cx="404" cy="149.5" r="3.5" data-tip="it 1000 · eğitim %1,19" data-tip-en="iter 1000 · training 1.19%"/>
+            </g>
+            <g fill="var(--c1)" stroke="var(--surface)" stroke-width="2">
+              <circle cx="52" cy="55.6" r="3.5" data-tip="it 200 · doğrulama %3,40" data-tip-en="iter 200 · validation 3.40%"/><circle cx="96" cy="83.6" r="3.5" data-tip="it 300 · doğrulama %2,74" data-tip-en="iter 300 · validation 2.74%"/><circle cx="140" cy="93.9" r="3.5" data-tip="it 400 · doğrulama %2,50" data-tip-en="iter 400 · validation 2.50%"/><circle cx="184" cy="99.6" r="3.5" data-tip="it 500 · doğrulama %2,36" data-tip-en="iter 500 · validation 2.36%"/><circle cx="228" cy="104.8" r="3.5" data-tip="it 600 · doğrulama %2,24" data-tip-en="iter 600 · validation 2.24%"/><circle cx="272" cy="106.7" r="3.5" data-tip="it 700 · doğrulama %2,19" data-tip-en="iter 700 · validation 2.19%"/><circle cx="316" cy="108.8" r="3.5" data-tip="it 800 · doğrulama %2,15" data-tip-en="iter 800 · validation 2.15%"/><circle cx="360" cy="109.9" r="3.5" data-tip="it 900 · doğrulama %2,12" data-tip-en="iter 900 · validation 2.12%"/><circle cx="404" cy="110.8" r="3.5" data-tip="it 1000 · doğrulama %2,10" data-tip-en="iter 1000 · validation 2.10%"/>
+            </g>
+            <g class="val" font-size="11"><text x="408" y="107" text-anchor="end" fill="var(--ink)">%2,10</text><text x="408" y="164" text-anchor="end" fill="var(--ink)">%1,19</text></g>
+            <line class="axisline" x1="52" y1="200" x2="414" y2="200"/>
+            <g class="ax" text-anchor="middle"><text x="52" y="216">200</text><text x="140" y="216">400</text><text x="228" y="216">600</text><text x="316" y="216">800</text><text x="404" y="216">1000</text></g>
+            <text class="axlab tr" x="52" y="238">boosting iterasyonu · dikey eksen SMAPE</text><text class="axlab en" x="52" y="238">boosting iteration · vertical axis is SMAPE</text>
+          </svg>
+          <figcaption><span class="tr">İki çizgi arasındaki açıklık ezberin ölçüsü. Doğrulama %2,10'da duruyor, eğitim düşmeye devam ediyor — buradan sonrası modelin veriyi ezberlemesi, öğrenmesi değil.</span><span class="en">The gap between the lines measures memorisation. Validation settles at 2.10% while training keeps falling — past this point the model is memorising, not learning.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ---------- P-04 ---------- -->
+    <article class="project">
+      <div class="project-head">
+        <span class="ref">P-04</span>
+        <h3><span class="tr">Müşteri Segmentasyonu</span><span class="en">Customer Segmentation</span></h3>
+        <span class="domain tr">kümeleme · perakende</span><span class="domain en">clustering · retail</span>
+      </div>
+      <p class="muted small" style="max-width:66ch">
+        <span class="tr">Omnichannel alışveriş geçmişinden müşteri grupları çıkarmak: pazarlama bütçesi kime, hangi mesajla gitmeli?</span>
+        <span class="en">Deriving customer groups from omnichannel purchase history: who should the marketing budget reach, and with what message?</span>
+      </p>
+
+      <div class="pgrid">
+        <div>
+          <h4><span class="tr">Ne yaptım</span><span class="en">What I did</span></h4>
+          <ul class="did">
+            <li><span class="tr">Ham işlem kayıtlarından müşteri düzeyinde değişkenler türettim: müşteri yaşı (tenure), son alışverişe uzaklık, sıklık ve toplam ciro.</span><span class="en">Derived customer-level features from raw transactions: tenure, recency, frequency and total revenue.</span></li>
+            <li><span class="tr">Değişkenleri standardize ettim — ölçek farkı olmasa K-Means ciroyu her şeyden önemli sayardı.</span><span class="en">Standardised the features — without it K-Means would treat revenue as more important than everything else.</span></li>
+            <li><span class="tr">Küme sayısını tek bir yönteme bakarak seçmedim: elbow ve silhouette eğrilerini birlikte okudum.</span><span class="en">Did not pick the cluster count from one method: read the elbow and silhouette curves together.</span></li>
+            <li><span class="tr">K-Means ve hiyerarşik kümelemeyi aynı veride karşılaştırdım, dendrogramla kesme noktasını doğruladım.</span><span class="en">Compared K-Means with hierarchical clustering on the same data and checked the cut point on the dendrogram.</span></li>
+            <li><span class="tr">Her segmenti davranışsal olarak profilledim — "küme 3" değil, "nadiren gelen ama yüksek sepetli müşteri" diye konuşulabilsin diye.</span><span class="en">Profiled each segment behaviourally, so the team can say "infrequent, high-basket customer" instead of "cluster 3".</span></li>
+          </ul>
+          <div class="stack"><span>scikit-learn</span><span>K-Means</span><span class="tr">hiyerarşik kümeleme</span><span class="en">hierarchical</span><span>SciPy</span><span>Seaborn</span></div>
+          <div class="links">
+            <a href="https://www.kaggle.com/code/busraercan/unsupervised-learning-based-customer-segmentation" target="_blank" rel="noopener">Kaggle notebook ↗</a>
+            <a href="https://github.com/busra-ercan/Unsupervised-Learning-Based-Customer-Segmentation" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.kaggle.com/code/busraercan/customer-segmentation-with-rfm" target="_blank" rel="noopener"><span class="tr">İlgili: RFM ↗</span><span class="en">Related: RFM ↗</span></a>
+          </div>
+        </div>
+
+        <figure class="chart">
+          <div class="chart-title"><span class="tr">Kaç segment? — silhouette skoru</span><span class="en">How many segments? — silhouette score</span></div>
+          <div class="chart-sub"><span class="tr">Yüksek skor, kümelerin birbirinden daha net ayrıldığı anlamına gelir.</span><span class="en">A higher score means the clusters separate more cleanly.</span></div>
+          <svg viewBox="0 0 430 240" class="hit">
+            <g class="gridline"><line x1="52" y1="200" x2="414" y2="200"/><line x1="52" y1="166" x2="414" y2="166"/><line x1="52" y1="132" x2="414" y2="132"/><line x1="52" y1="98" x2="414" y2="98"/><line x1="52" y1="64" x2="414" y2="64"/><line x1="52" y1="30" x2="414" y2="30"/></g>
+            <g class="ax" text-anchor="end"><text x="46" y="204">0,25</text><text x="46" y="170">0,30</text><text x="46" y="136">0,35</text><text x="46" y="102">0,40</text><text x="46" y="68">0,45</text><text x="46" y="34">0,50</text></g>
+            <polyline fill="none" stroke="var(--c1)" stroke-width="2" stroke-linejoin="round" points="52,47 81.3,132.7 110.7,119.8 140,116.4 169.3,128.6 198.7,172.1 228,170.1 257.3,169.4 286.7,189.8 316,174.2 345.3,172.8 374.7,187.8 404,187.8"/>
+            <g fill="var(--c1)" stroke="var(--surface)" stroke-width="2">
+              <circle cx="52" cy="47" r="3.5" data-tip="k=2 · silhouette 0,475" data-tip-en="k=2 · silhouette 0.475"/><circle cx="81.3" cy="132.7" r="3.5" data-tip="k=3 · silhouette 0,349" data-tip-en="k=3 · silhouette 0.349"/><circle cx="110.7" cy="119.8" r="3.5" data-tip="k=4 · silhouette 0,368" data-tip-en="k=4 · silhouette 0.368"/><circle cx="140" cy="116.4" r="3.5" data-tip="k=5 · silhouette 0,373" data-tip-en="k=5 · silhouette 0.373"/><circle cx="169.3" cy="128.6" r="3.5" data-tip="k=6 · silhouette 0,355" data-tip-en="k=6 · silhouette 0.355"/><circle cx="198.7" cy="172.1" r="3.5" data-tip="k=7 · silhouette 0,291" data-tip-en="k=7 · silhouette 0.291"/><circle cx="228" cy="170.1" r="3.5" data-tip="k=8 · silhouette 0,294" data-tip-en="k=8 · silhouette 0.294"/><circle cx="257.3" cy="169.4" r="3.5" data-tip="k=9 · silhouette 0,295" data-tip-en="k=9 · silhouette 0.295"/><circle cx="286.7" cy="189.8" r="3.5" data-tip="k=10 · silhouette 0,265" data-tip-en="k=10 · silhouette 0.265"/><circle cx="316" cy="174.2" r="3.5" data-tip="k=11 · silhouette 0,288" data-tip-en="k=11 · silhouette 0.288"/><circle cx="345.3" cy="172.8" r="3.5" data-tip="k=12 · silhouette 0,290" data-tip-en="k=12 · silhouette 0.290"/><circle cx="374.7" cy="187.8" r="3.5" data-tip="k=13 · silhouette 0,268" data-tip-en="k=13 · silhouette 0.268"/><circle cx="404" cy="187.8" r="3.5" data-tip="k=14 · silhouette 0,268" data-tip-en="k=14 · silhouette 0.268"/>
+            </g>
+            <g class="val" font-size="11"><text x="60" y="42">0,475</text><text x="146" y="112">0,373</text></g>
+            <line class="axisline" x1="52" y1="200" x2="414" y2="200"/>
+            <g class="ax" text-anchor="middle"><text x="52" y="216">2</text><text x="110.7" y="216">4</text><text x="169.3" y="216">6</text><text x="228" y="216">8</text><text x="286.7" y="216">10</text><text x="345.3" y="216">12</text><text x="404" y="216">14</text></g>
+            <text class="axlab tr" x="52" y="234">küme sayısı (k)</text><text class="axlab en" x="52" y="234">number of clusters (k)</text>
+          </svg>
+          <figcaption><span class="tr">Skor k=2'de tepe yapıyor, ama iki segment pazarlama için ayrım üretmiyor — "iyi müşteri / diğerleri" demekle aynı şey. k=4–6 bandı skorun ikinci platosu ve eyleme dönüştürülebilir segment sayısı burada. Matematiğin en yüksek değeri her zaman işin doğru cevabı değil.</span><span class="en">The score peaks at k=2, but two segments give marketing nothing to act on — it amounts to "good customers and everyone else". The k=4–6 band is the second plateau, and that is where segments become actionable. The mathematical maximum is not always the right business answer.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ---------- P-05 ---------- -->
+    <article class="project">
+      <div class="project-head">
+        <span class="ref">P-05</span>
+        <h3><span class="tr">Oyuncu Potansiyeli Sınıflandırması</span><span class="en">Player Potential Classification</span></h3>
+        <span class="domain tr">sınıflandırma · spor analitiği</span><span class="domain en">classification · sports analytics</span>
+      </div>
+      <p class="muted small" style="max-width:66ch">
+        <span class="tr">Scoutların maç içinde verdiği yetenek puanlarından, bir oyuncunun "öne çıkan" olarak etiketlenip etiketlenmeyeceğini tahmin etmek.</span>
+        <span class="en">Predicting whether a player gets labelled "highlighted", using the attribute scores scouts assign during matches.</span>
+      </p>
+
+      <div class="metrics">
+        <div><div class="v">0,908</div><div class="k">ROC-AUC</div></div>
+        <div><div class="v">0,871</div><div class="k"><span class="tr">CV doğruluk</span><span class="en">CV accuracy</span></div></div>
+        <div><div class="v">5</div><div class="k"><span class="tr">model optimize edildi</span><span class="en">models tuned</span></div></div>
+      </div>
+
+      <div class="pgrid">
+        <div>
+          <h4><span class="tr">Ne yaptım</span><span class="en">What I did</span></h4>
+          <ul class="did">
+            <li><span class="tr">İki ayrı veri setini dört anahtar üzerinden birleştirdim (değerlendirme, maç, scout ve oyuncu kimliği).</span><span class="en">Joined two datasets on four keys: evaluation, match, scout and player id.</span></li>
+            <li><span class="tr">Kaleci pozisyonunu ve veri setinin yalnızca %1'ini oluşturan <span class="num">below_average</span> sınıfını çıkardım — bu kadar az örnekle öğrenilecek bir şey yok.</span><span class="en">Removed goalkeepers and the <span class="num">below_average</span> class, which was 1% of the data — too few examples to learn anything from.</span></li>
+            <li><span class="tr">Pivot tablo ile veriyi yeniden şekillendirdim: her satır bir oyuncu, her sütun bir yetenek.</span><span class="en">Reshaped the data with a pivot table: one row per player, one column per attribute.</span></li>
+            <li><span class="tr">Beş modeli hiperparametre optimizasyonuyla karşılaştırdım, sonra değişken önemini çıkardım — hangi yeteneğin etiketi sürüklediğini görmek için.</span><span class="en">Compared five tuned models, then extracted feature importance to see which attributes drive the label.</span></li>
+            <li><span class="tr">Dengesiz sınıf olduğu için doğruluk yerine ROC-AUC'ye baktım.</span><span class="en">Judged on ROC-AUC rather than accuracy, because the classes are imbalanced.</span></li>
+          </ul>
+          <div class="stack"><span>scikit-learn</span><span>Random&nbsp;Forest</span><span>CatBoost</span><span>XGBoost</span><span>GridSearchCV</span></div>
+          <div class="links">
+            <a href="https://www.kaggle.com/code/busraercan/scoutium-player-potential-classification-project" target="_blank" rel="noopener">Kaggle notebook ↗</a>
+            <a href="https://github.com/busra-ercan/SCOUTIUM-Player-Potential-Classification-Project-" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <figure class="chart">
+          <div class="chart-title"><span class="tr">Optimizasyon sonrası ROC-AUC</span><span class="en">ROC-AUC after tuning</span></div>
+          <div class="chart-sub"><span class="tr">0,50 çizgisi yazı-tura demek. Uzun olan iyi.</span><span class="en">The 0.50 line is a coin flip. Longer is better.</span></div>
+          <svg viewBox="0 0 430 212" class="hit">
+            <g class="gridline"><line x1="162" y1="12" x2="162" y2="174"/><line x1="294" y1="12" x2="294" y2="174"/><line x1="360" y1="12" x2="360" y2="174"/></g>
+            <g>
+              <path d="M96,18 h236 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-236 Z" fill="var(--signal)" data-tip="Random Forest — ROC-AUC 0,908 · CV doğruluk 0,871" data-tip-en="Random Forest — ROC-AUC 0.908 · CV accuracy 0.871"/>
+              <path d="M96,50 h230 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-230 Z" fill="var(--c1)" data-tip="CatBoost — ROC-AUC 0,888" data-tip-en="CatBoost — ROC-AUC 0.888"/>
+              <path d="M96,82 h229 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-229 Z" fill="var(--c1)" data-tip="XGBoost — ROC-AUC 0,884" data-tip-en="XGBoost — ROC-AUC 0.884"/>
+              <path d="M96,114 h211 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-211 Z" fill="var(--c1)" data-tip="CART — ROC-AUC 0,816" data-tip-en="CART — ROC-AUC 0.816"/>
+              <path d="M96,146 h130 a4,4 0 0 1 4,4 v9 a4,4 0 0 1 -4,4 h-130 Z" fill="var(--c1)" data-tip="KNN — ROC-AUC 0,509" data-tip-en="KNN — ROC-AUC 0.509"/>
+            </g>
+            <line x1="228" y1="12" x2="228" y2="178" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="4 3"/>
+            <g class="ax" text-anchor="end"><text x="92" y="30.5">Random Forest</text><text x="92" y="62.5">CatBoost</text><text x="92" y="94.5">XGBoost</text><text x="92" y="126.5">CART</text><text x="92" y="158.5">KNN</text></g>
+            <g class="val"><text x="343" y="30.5">0,908</text><text x="337" y="62.5">0,888</text><text x="336" y="94.5">0,884</text><text x="318" y="126.5">0,816</text><text x="237" y="158.5">0,509</text></g>
+            <line class="axisline" x1="96" y1="174" x2="360" y2="174"/>
+            <g class="ax" text-anchor="middle"><text x="96" y="188">0</text><text x="162" y="188">0,25</text><text x="228" y="188">0,50</text><text x="294" y="188">0,75</text><text x="360" y="188">1,00</text></g>
+            <text class="axlab tr" x="96" y="206">ROC-AUC · kesikli çizgi: rastgele tahmin</text>
+            <text class="axlab en" x="96" y="206">ROC-AUC · dashed line: random guessing</text>
+          </svg>
+          <figcaption><span class="tr">KNN yazı-turadan ayırt edilemiyor; bu veri yapısında mesafe temelli yöntem çalışmıyor. Ağaç tabanlı modeller aynı veriden 0,88–0,91 çıkarıyor. Model seçimi tahmin değil, ölçüm işi.</span><span class="en">KNN is indistinguishable from a coin flip — distance-based methods do not suit this data shape. Tree-based models reach 0.88–0.91 on exactly the same inputs. Model choice is measurement, not guesswork.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ---------- P-06 ---------- -->
+    <article class="project">
+      <div class="project-head">
+        <span class="ref">P-06</span>
+        <h3><span class="tr">Konut Fiyat Tahmini</span><span class="en">House Price Prediction</span></h3>
+        <span class="domain tr">regresyon · 79 değişken</span><span class="domain en">regression · 79 features</span>
+      </div>
+      <p class="muted small" style="max-width:66ch">
+        <span class="tr">Ames konut veri seti: 79 değişken, bolca eksik veri ve çarpık bir hedef. Asıl iş modellemeden önce başlıyor.</span>
+        <span class="en">The Ames housing dataset: 79 features, plenty of missing values and a skewed target. The real work starts before modelling.</span>
+      </p>
+
+      <div class="pgrid">
+        <div>
+          <h4><span class="tr">Ne yaptım</span><span class="en">What I did</span></h4>
+          <ul class="did">
+            <li><span class="tr">Eksik veriyi haritaladım ve ayrım yaptım: "veri yok" ile "o özellik evde yok" aynı şey değil — havuzu olmayan evin havuz kalitesi boştur, kayıp değildir.</span><span class="en">Mapped the missing values and separated two cases: "unknown" and "the house does not have it" are different — a house without a pool has no pool quality, not a missing one.</span></li>
+            <li><span class="tr">Çarpık hedefi log dönüşümüyle normale yaklaştırdım.</span><span class="en">Brought the skewed target closer to normal with a log transform.</span></li>
+            <li><span class="tr">Korelasyon analiziyle hedefi gerçekten açıklayan değişkenleri ayırdım, nadir kategorileri birleştirdim.</span><span class="en">Used correlation analysis to find the features that genuinely explain the target, and grouped rare categories.</span></li>
+            <li><span class="tr">On modeli aynı kurguda karşılaştırdım — doğrusal, ağaç ve boosting ailelerini birlikte.</span><span class="en">Compared ten models under one setup, across linear, tree and boosting families.</span></li>
+          </ul>
+          <div class="stack"><span>pandas</span><span>scikit-learn</span><span>LightGBM</span><span>XGBoost</span><span>Seaborn</span></div>
+        </div>
+
+        <figure class="chart">
+          <div class="chart-title"><span class="tr">On model, tek kurgu</span><span class="en">Ten models, one setup</span></div>
+          <div class="chart-sub"><span class="tr">RMSE, log ölçeğinde. Kısa olan iyi.</span><span class="en">RMSE on the log scale. Shorter is better.</span></div>
+          <svg viewBox="0 0 430 300" class="hit">
+            <g class="gridline"><line x1="150" y1="8" x2="150" y2="272"/><line x1="204" y1="8" x2="204" y2="272"/><line x1="258" y1="8" x2="258" y2="272"/><line x1="312" y1="8" x2="312" y2="272"/><line x1="366" y1="8" x2="366" y2="272"/></g>
+            <g>
+              <path d="M96,14 h133 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-133 Z" fill="var(--signal)" data-tip="GBM — RMSE 0,1270"/>
+              <path d="M96,40 h134 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-134 Z" fill="var(--c1)" data-tip="Ridge — RMSE 0,1277"/>
+              <path d="M96,66 h138 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-138 Z" fill="var(--c1)" data-tip="LightGBM — RMSE 0,1317"/>
+              <path d="M96,92 h142 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-142 Z" fill="var(--c1)" data-tip="Linear Regression — RMSE 0,1355"/>
+              <path d="M96,118 h145 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-145 Z" fill="var(--c1)" data-tip="Random Forest — RMSE 0,1378"/>
+              <path d="M96,144 h149 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-149 Z" fill="var(--c1)" data-tip="XGBoost — RMSE 0,1414"/>
+              <path d="M96,170 h165 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-165 Z" fill="var(--c1)" data-tip="ElasticNet — RMSE 0,1569"/>
+              <path d="M96,196 h189 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-189 Z" fill="var(--c1)" data-tip="Lasso — RMSE 0,1785"/>
+              <path d="M96,222 h217 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-217 Z" fill="var(--c1)" data-tip="CART — RMSE 0,2043"/>
+              <path d="M96,248 h251 a4,4 0 0 1 4,4 v7 a4,4 0 0 1 -4,4 h-251 Z" fill="var(--c1)" data-tip="KNN — RMSE 0,2363"/>
+            </g>
+            <g class="ax" text-anchor="end" font-size="10.5"><text x="92" y="25">GBM</text><text x="92" y="51">Ridge</text><text x="92" y="77">LightGBM</text><text x="92" y="103">Linear Reg.</text><text x="92" y="129">Random Forest</text><text x="92" y="155">XGBoost</text><text x="92" y="181">ElasticNet</text><text x="92" y="207">Lasso</text><text x="92" y="233">CART</text><text x="92" y="259">KNN</text></g>
+            <g class="val" font-size="10.5"><text x="240" y="25">0,127</text><text x="241" y="51">0,128</text><text x="245" y="77">0,132</text><text x="249" y="103">0,136</text><text x="252" y="129">0,138</text><text x="256" y="155">0,141</text><text x="272" y="181">0,157</text><text x="296" y="207">0,179</text><text x="324" y="233">0,204</text><text x="358" y="259">0,236</text></g>
+            <line class="axisline" x1="96" y1="272" x2="366" y2="272"/>
+            <g class="ax" text-anchor="middle"><text x="96" y="286">0</text><text x="150" y="286">0,05</text><text x="204" y="286">0,10</text><text x="258" y="286">0,15</text><text x="312" y="286">0,20</text><text x="366" y="286">0,25</text></g>
+          </svg>
+          <figcaption><span class="tr">Düzenlileştirilmiş doğrusal bir model (Ridge, 0,128) burada XGBoost'u geçiyor. Veri iyi hazırlandığında en karmaşık model her zaman kazanmıyor — bunu bilmek, model seçmekten daha değerli.</span><span class="en">A regularised linear model (Ridge, 0.128) beats XGBoost here. When the data is prepared well, the most complex model does not always win — knowing that is worth more than picking one.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ---------- tüm notebook dizini ---------- -->
+    <div style="margin-top:46px">
+      <h4 style="margin-bottom:4px"><span class="tr">Kaggle'daki tüm notebook'lar</span><span class="en">Every notebook on Kaggle</span></h4>
+      <p class="small muted" style="margin-bottom:14px"><span class="tr">On altı public notebook. Yukarıdaki altısı ayrıntılı anlatıldı; geri kalanı CRM analitiği, öneri sistemleri, A/B testi ve derin öğrenme temellerini kapsıyor.</span><span class="en">Sixteen public notebooks. Six are detailed above; the rest cover CRM analytics, recommender systems, A/B testing and deep-learning fundamentals.</span></p>
+      <div class="index-list">
+        <a href="https://www.kaggle.com/code/busraercan/customer-segmentation-with-rfm" target="_blank" rel="noopener"><span class="t">Customer Segmentation with RFM</span><span class="c tr">CRM analitiği</span><span class="c en">CRM analytics</span><span class="u">▲ 12</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/telco-churn-analysis-ml" target="_blank" rel="noopener"><span class="t">Telco Churn Analysis — ML</span><span class="c tr">sınıflandırma</span><span class="c en">classification</span><span class="u">▲ 10</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/rating-product-sorting-reviews-in-amazon" target="_blank" rel="noopener"><span class="t">Rating Product &amp; Sorting Reviews in Amazon</span><span class="c tr">istatistik · ölçümleme</span><span class="c en">statistics · measurement</span><span class="u">▲ 9</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/time-series-forecasting-of-transaction-volume-iyz" target="_blank" rel="noopener"><span class="t">Time Series Forecasting of Transaction Volume</span><span class="c tr">zaman serisi</span><span class="c en">time series</span><span class="u">▲ 9</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/store-item-demand-forecasting-challenge" target="_blank" rel="noopener"><span class="t">Store Item Demand Forecasting Challenge</span><span class="c tr">zaman serisi</span><span class="c en">time series</span><span class="u">▲ 8</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/association-rule-based-recommender-system-armut" target="_blank" rel="noopener"><span class="t">Association Rule Based Recommender System — ARMUT</span><span class="c tr">öneri sistemi</span><span class="c en">recommender</span><span class="u">▲ 8</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/neural-networks-basic-consepts" target="_blank" rel="noopener"><span class="t">Neural Networks — Basic Concepts</span><span class="c tr">derin öğrenme</span><span class="c en">deep learning</span><span class="u">▲ 7</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/cltv-prediction-with-bg-nbd-and-gamma-gamma-models" target="_blank" rel="noopener"><span class="t">CLTV Prediction with BG-NBD &amp; Gamma-Gamma</span><span class="c tr">olasılıksal modelleme</span><span class="c en">probabilistic modelling</span><span class="u">▲ 7</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/breast-cancer-classification-logistic-regression" target="_blank" rel="noopener"><span class="t">Breast Cancer Classification — Logistic Regression</span><span class="c tr">sınıflandırma</span><span class="c en">classification</span><span class="u">▲ 5</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/car-price-predict-project" target="_blank" rel="noopener"><span class="t">Car Price Predict Project</span><span class="c tr">regresyon</span><span class="c en">regression</span><span class="u">▲ 5</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/facebook-bidding-models-a-b-test" target="_blank" rel="noopener"><span class="t">Facebook Bidding Models — A/B Test</span><span class="c tr">hipotez testi</span><span class="c en">hypothesis testing</span><span class="u">▲ 4</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/diabetes-feature-engineering-project" target="_blank" rel="noopener"><span class="t">Diabetes Feature Engineering Project</span><span class="c tr">özellik mühendisliği</span><span class="c en">feature engineering</span><span class="u">▲ 4</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/potential-customer-revenue-with-rule-based-classi" target="_blank" rel="noopener"><span class="t">Potential Customer Revenue — Rule-Based Classification</span><span class="c tr">kural tabanlı</span><span class="c en">rule-based</span><span class="u">▲ 3</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/keras-and-tensorflow-dataset" target="_blank" rel="noopener"><span class="t">Keras &amp; TensorFlow Dataset</span><span class="c tr">derin öğrenme</span><span class="c en">deep learning</span><span class="u">▲ 2</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/scoutium-player-potential-classification-project" target="_blank" rel="noopener"><span class="t">SCOUTIUM Player Potential Classification</span><span class="c tr">sınıflandırma</span><span class="c en">classification</span><span class="u">▲ 2</span></a>
+        <a href="https://www.kaggle.com/code/busraercan/unsupervised-learning-based-customer-segmentation" target="_blank" rel="noopener"><span class="t">Unsupervised Learning–Based Customer Segmentation</span><span class="c tr">kümeleme</span><span class="c en">clustering</span><span class="u">▲ 2</span></a>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ YETKİNLİK ============ -->
+<section id="skills">
+  <div class="wrap row">
+    <div class="rail">
+      <div class="sheet">02</div>
+      <h2><span class="tr">Yetkinlik</span><span class="en">Skills</span></h2>
+      <p class="note"><span class="tr">Liste değil, kanıt. Her başlığın altında bunu hangi projede kullandığım yazıyor.</span><span class="en">Not a list — evidence. Each heading says where I actually used it.</span></p>
+    </div>
+
+    <div>
+      <div class="skills">
+        <div>
+          <h4><span class="tr">Makine öğrenmesi</span><span class="en">Machine learning</span></h4>
+          <div class="ev"><span class="tr">Regresyon, sınıflandırma, kümeleme. P-01'de yedi, P-06'da on model karşılaştırdım; P-05'te beşini optimize ettim.</span><span class="en">Regression, classification, clustering. Seven models compared in P-01, ten in P-06, five tuned in P-05.</span></div>
+          <ul><li>scikit-learn</li><li>LightGBM</li><li>XGBoost</li><li>CatBoost</li><li>K-Means</li><li>Optuna</li><li>GridSearchCV</li><li>Pipeline</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Veri hazırlama ve analiz</span><span class="en">Data preparation &amp; analysis</span></h4>
+          <div class="ev"><span class="tr">Keşifsel analiz, eksik ve aykırı değer, özellik mühendisliği. Kendi <span class="num">check_df</span>, <span class="num">cat_summary</span>, <span class="num">num_summary</span> fonksiyonlarımı yazdım ve projeler arasında taşıdım.</span><span class="en">Exploratory analysis, missing values, outliers, feature engineering. I wrote my own <span class="num">check_df</span>, <span class="num">cat_summary</span> and <span class="num">num_summary</span> helpers and carried them across projects.</span></div>
+          <ul><li>pandas</li><li>NumPy</li><li>SQL</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li><li>SciPy</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Derin öğrenme</span><span class="en">Deep learning</span></h4>
+          <div class="ev"><span class="tr">P-02'de ağırlıklı kayıp fonksiyonu, erken durdurma ve Keras Tuner. Ayrı bir çalışmada dropout ve erken durdurmanın aşırı öğrenmeye etkisini ölçtüm.</span><span class="en">Weighted loss, early stopping and Keras Tuner in P-02. In a separate study I measured how dropout and early stopping affect overfitting.</span></div>
+          <ul><li>TensorFlow</li><li>Keras</li><li>Keras&nbsp;Tuner</li><li>tf.data</li><li>callbacks</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Zaman serisi ve tahminleme</span><span class="en">Time series &amp; forecasting</span></h4>
+          <div class="ev"><span class="tr">P-03'te lag/rolling/EWM değişkenleri, tarihe göre bölme ve özel SMAPE metriği. Ayrıca düzleştirme yöntemleri ve talep tahminleme çalışmaları.</span><span class="en">Lag/rolling/EWM features, date-based splitting and a custom SMAPE metric in P-03. Plus smoothing methods and demand forecasting studies.</span></div>
+          <ul><li class="tr">gecikme değişkenleri</li><li class="en">lag features</li><li>SMAPE</li><li class="tr">zaman bazlı CV</li><li class="en">time-based CV</li><li class="tr">düzleştirme</li><li class="en">smoothing</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">İş analitiği</span><span class="en">Business analytics</span></h4>
+          <div class="ev"><span class="tr">RFM ve CLTV modelleri, A/B testi ve hipotez testleri, birliktelik kuralları, kural tabanlı sınıflandırma. Modelden önce sorulması gereken soru hangisi, onu ayırt etmek.</span><span class="en">RFM and CLTV models, A/B and hypothesis testing, association rules, rule-based classification. Knowing which question comes before the model.</span></div>
+          <ul><li>RFM</li><li>BG-NBD</li><li>Gamma-Gamma</li><li>A/B test</li><li class="tr">hipotez testi</li><li class="en">hypothesis testing</li><li>Apriori</li></ul>
+        </div>
+        <div>
+          <h4><span class="tr">Mühendislik pratiği</span><span class="en">Engineering practice</span></h4>
+          <div class="ev"><span class="tr">On yıllık mühendislik alışkanlıkları: ölçmeden iddia etmemek, kök nedene inmek, yaptığını belgelemek. Veri biliminde de işin yarısı bu.</span><span class="en">Ten years of engineering habits: no claim without a measurement, trace it to root cause, document what you did. Half the job in data science is the same.</span></div>
+          <ul><li>Git</li><li>GitHub</li><li>Jupyter</li><li>PyCharm</li><li>RCA · 8D</li><li>FMEA</li><li class="tr">kök neden analizi</li><li class="en">root cause analysis</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÜRÜNLER ============ -->
+<section id="products">
+  <div class="wrap row">
+    <div class="rail">
+      <div class="sheet">03</div>
+      <h2><span class="tr">Ürünler</span><span class="en">Products</span></h2>
+      <p class="note"><span class="tr">Analiz yapmakla çalışan bir şey teslim etmek aynı iş değil. Bu üçü canlı ürün olarak kuruldu.</span><span class="en">Running an analysis and shipping something that works are not the same job. These three were built as products.</span></p>
+    </div>
+
+    <div>
+      <p class="lede" style="margin-bottom:26px">
+        <span class="tr">Ürünü ben tanımlıyorum: veri modelini, iş kurallarını, ekranları ve uçtan uca akışı ben kuruyorum. Kodu yapay zekâ ile yazıyorum, çıkanı gözden geçirip düzeltiyorum. Bir veri projesini raporda bırakmak yerine insanların kullandığı bir şeye dönüştürmek, aynı becerinin devamı.</span>
+        <span class="en">I define the product: the data model, the business rules, the screens and the end-to-end flow are mine. I write the code with AI and review what comes out. Turning a data project into something people actually use, instead of leaving it in a report, is the same skill continued.</span>
+      </p>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="ref">Ü-01</span>
+          <h3>reytingim</h3>
+          <span class="domain tr">yerel SEO · SaaS</span><span class="domain en">local SEO · SaaS</span>
+        </div>
+        <p class="small muted" style="max-width:66ch">
+          <span class="tr">Yerel işletmeler için kredili geo-grid sıralama tarayıcı ve yorum yönetimi. Bir anahtar kelime için işletmenin çevresinde 3×3'ten 7×7'ye grid kurup her noktada Google Haritalar sıralamasını ölçüyor; mesafe ağırlıklı bir görünürlük skoru ve rakip karşılaştırması üretiyor.</span>
+          <span class="en">A credit-based geo-grid rank scanner and review manager for local businesses. For a given keyword it lays a 3×3 to 7×7 grid around the business, measures the Google Maps rank at every point, and produces a distance-weighted visibility score plus a competitor comparison.</span>
+        </p>
+        <ul class="did">
+          <li><span class="tr">Mesafe ağırlıklı görünürlük skorunu (DWPS) ve yorum gücü bileşenini ben tasarladım — ham sıralama ortalaması yanıltıcıydı.</span><span class="en">Designed the distance-weighted visibility score and the review-strength component myself — a raw average rank was misleading.</span></li>
+          <li><span class="tr">Veri modelini Supabase üzerinde satır düzeyi güvenlikle (RLS) kurdum; her müşteri yalnızca kendi verisini görüyor.</span><span class="en">Built the data model on Supabase with row-level security, so each customer sees only their own data.</span></li>
+          <li><span class="tr">Yorum yanıtları asla API ile gönderilmiyor; öneri üretilip kopyalanıyor — Google politikalarına uyum için bilerek böyle tasarlandı.</span><span class="en">Review replies are never posted through the API; the tool drafts and the user pastes — a deliberate design choice for Google policy compliance.</span></li>
+          <li><span class="tr">Türkçe ve İngilizce, müşteriye sunulabilir PDF rapor çıktısı.</span><span class="en">Turkish and English throughout, with a client-ready PDF report.</span></li>
+        </ul>
+        <div class="stack"><span>Next.js</span><span>TypeScript</span><span>Tailwind&nbsp;v4</span><span>Supabase</span><span>PostgreSQL&nbsp;RLS</span><span>SerpAPI</span><span>Google&nbsp;Places</span><span>Claude&nbsp;API</span></div>
+        <div class="links"><a href="https://github.com/busra-ercan/reytingim" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="ref">Ü-02</span>
+          <h3>Mix-up</h3>
+          <span class="domain tr">CRM · monorepo</span><span class="domain en">CRM · monorepo</span>
+        </div>
+        <p class="small muted" style="max-width:66ch">
+          <span class="tr">Müzik sektörü için iki dilli bir CRM. Paylaşılan tip tanımları, tek yerden yönetilen durum etiketleri ve para/tarih biçimlendirmesi ile monorepo yapısında kuruldu.</span>
+          <span class="en">A bilingual CRM for the music industry, built as a monorepo with shared type definitions, centrally managed status labels and one place for currency and date formatting.</span>
+        </p>
+        <ul class="did">
+          <li><span class="tr">Her kullanıcıya görünen metni <span class="num">{ tr, en }</span> yapısında zorunlu kıldım — sonradan çeviri eklemek yerine baştan iki dilli.</span><span class="en">Made every user-facing string a <span class="num">{ tr, en }</span> pair by convention — bilingual from the start instead of retrofitted.</span></li>
+          <li><span class="tr">Durum etiketlerini ve renklerini tek bir tip dosyasından besledim; ekranlar arasında tutarsızlık çıkmıyor.</span><span class="en">Fed status labels and colours from a single types file, so screens cannot drift apart.</span></li>
+        </ul>
+        <div class="stack"><span>Next.js</span><span>TypeScript</span><span class="tr">monorepo</span><span class="en">monorepo</span><span>Supabase</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="ref">Ü-03</span>
+          <h3><span class="tr">Yerel platform + otomasyon</span><span class="en">Local platform + automation</span></h3>
+          <span class="domain tr">iş akışı otomasyonu</span><span class="domain en">workflow automation</span>
+        </div>
+        <p class="small muted" style="max-width:66ch">
+          <span class="tr">Next.js ve Supabase üzerine kurulu bir platform; tekrar eden işleri n8n iş akışlarına devrettim. Veri toplama, zenginleştirme ve bildirim adımları elle değil, zamanlanmış akışlarla çalışıyor.</span>
+          <span class="en">A Next.js and Supabase platform with repetitive work handed off to n8n workflows. Collection, enrichment and notification steps run on schedules rather than by hand.</span>
+        </p>
+        <div class="stack"><span>Next.js</span><span>Supabase</span><span>n8n</span><span class="tr">API entegrasyonu</span><span class="en">API integration</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GEÇMİŞ ============ -->
+<section id="background">
+  <div class="wrap row">
+    <div class="rail">
+      <div class="sheet">04</div>
+      <h2><span class="tr">Geçmiş</span><span class="en">Background</span></h2>
+      <p class="note"><span class="tr">Veri bilimine sıfırdan gelmedim. On yıl boyunca zaten ölçüyor, doğruluyor ve karar veriyordum.</span><span class="en">I did not arrive at data science from nothing. For ten years I was already measuring, validating and deciding.</span></p>
+    </div>
+
+    <div>
+      <ul class="tl">
+        <li class="now">
+          <div class="yr">2024 — <span class="tr">bugün</span><span class="en">present</span></div>
+          <h4><span class="tr">Veri Bilimi</span><span class="en">Data Science</span></h4>
+          <div class="org"><span class="tr">Bağımsız projeler · Kaggle · Miuul Veri Bilimciliği programı</span><span class="en">Independent projects · Kaggle · Miuul Data Science programme</span></div>
+          <p><span class="tr">200 saatin üzerinde eğitim ve uygulama. Kütüphanelerin hazır fonksiyonlarına güvenmek yerine kendi yardımcı fonksiyonlarımı yazdım, projeler arasında taşıdım ve her modeli ölçülmüş bir sonuçla bitirdim. On altı public notebook, Kaggle Notebooks Expert.</span><span class="en">Over 200 hours of training and practice. Instead of leaning on library defaults I wrote my own helper functions, carried them between projects, and finished every model with a measured result. Sixteen public notebooks, Kaggle Notebooks Expert.</span></p>
+        </li>
+        <li>
+          <div class="yr">2018 — 2025</div>
+          <h4><span class="tr">Kıdemli Elektrik Sistem Mühendisi</span><span class="en">Senior Electrical System Engineer</span></h4>
+          <div class="org">FEV Türkiye Automotive · İzmir</div>
+          <p><span class="tr">Tam araç HV/LV kablo demeti mimarisi: şematik tasarım, güzergâh, malzeme listesi, güç tüketimi ve gerilim düşümü simülasyonları. CAN, LIN, J1939 ve UDS ile diyagnostik; OEM ekipleriyle arıza çözümü. ISO 26262 kapsamında HARA, FMEA ve DFMEA analizleri. Otobüs, kamyon, binek, traktör ve EV/CNG/ICE platformlarında uluslararası ekiplerle çalışma. Yazılım tanımlı araç (SDV) ve zonal mimari erken geliştirme faaliyetleri.</span><span class="en">Full-vehicle HV/LV harness architecture: schematic design, routing, BOM, power-consumption and voltage-drop simulation. Diagnostics over CAN, LIN, J1939 and UDS, troubleshooting alongside OEM teams. HARA, FMEA and DFMEA under ISO 26262. International teams across buses, trucks, passenger cars, tractors and EV/CNG/ICE platforms. Early work on software-defined vehicle and zonal architecture.</span></p>
+        </li>
+        <li>
+          <div class="yr">2017 — 2018</div>
+          <h4><span class="tr">Elektrik Güç ve Dağıtım Sistemleri Mühendisi</span><span class="en">Electrical Power &amp; Distribution System Engineer</span></h4>
+          <div class="org"><span class="tr">Segula Technologies · Bursa (TOFAŞ fabrikasında görevli)</span><span class="en">Segula Technologies · Bursa (assigned at the TOFAŞ plant)</span></div>
+          <p><span class="tr">Binek araç projelerinde kablo demeti maliyet optimizasyonu ve değer mühendisliği. Devreye alma, test ve üretime geçiş faaliyetleri. Tasarım iyileştirme fırsatlarını bulmak için kıyaslama çalışmaları.</span><span class="en">Harness cost optimisation and value engineering on passenger-car projects. Commissioning, testing and production launch. Benchmark studies to find design improvements and reduce material cost.</span></p>
+        </li>
+        <li>
+          <div class="yr">2015 — 2017</div>
+          <h4><span class="tr">Kalite Mühendisi</span><span class="en">Quality Engineer</span></h4>
+          <div class="org"><span class="tr">Nursan Kablo · Kütahya (Ford Otosan fabrikasında tedarikçi mühendisi)</span><span class="en">Nursan Cable · Kütahya (supplier engineer at the Ford Otosan plant)</span></div>
+          <p><span class="tr">Üretim hattının içinde: montaj akışı, takt süresi, istasyon bağımlılıkları, kalite kapıları, hata önleyici mekanizmalar ve malzeme izlenebilirliği. PPAP, PFMEA, RCA, 8D ve CAPA süreçlerini yürüttüm. Bir sorunun kök nedenini veriye bakarak bulmayı burada öğrendim.</span><span class="en">Inside the production line: assembly flow, takt time, station dependencies, quality gates, error-proofing and material traceability. Ran PPAP, PFMEA, RCA, 8D and CAPA. This is where I learned to find a root cause by looking at the data.</span></p>
+        </li>
+        <li>
+          <div class="yr">2010 — 2015</div>
+          <h4><span class="tr">Elektrik-Elektronik Mühendisliği, Lisans</span><span class="en">B.Sc. Electrical &amp; Electronics Engineering</span></h4>
+          <div class="org"><span class="tr">Dumlupınar Üniversitesi</span><span class="en">Dumlupınar University</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ İLETİŞİM ============ -->
+<section id="contact">
+  <div class="wrap row">
+    <div class="rail">
+      <div class="sheet">05</div>
+      <h2><span class="tr">İletişim</span><span class="en">Contact</span></h2>
+    </div>
+    <div>
+      <p class="lede">
+        <span class="tr">İzmir'deyim, veri analisti ve veri bilimci rollerine açığım. Üretim, otomotiv ve lojistik verisiyle çalışan ekiplerde alan bilgimin doğrudan karşılığı var.</span>
+        <span class="en">I am in İzmir and open to data analyst and data scientist roles. In teams working with manufacturing, automotive or logistics data, my domain background pays for itself immediately.</span>
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:busr.ercan@gmail.com"><span><span class="lbl">e-posta</span><span class="val2">busr.ercan@gmail.com</span></span></a>
+        <a href="https://www.linkedin.com/in/busra-ercan" target="_blank" rel="noopener"><span><span class="lbl">LinkedIn</span><span class="val2">busra-ercan</span></span></a>
+        <a href="https://github.com/busra-ercan" target="_blank" rel="noopener"><span><span class="lbl">GitHub</span><span class="val2">busra-ercan</span></span></a>
+        <a href="https://www.kaggle.com/busraercan" target="_blank" rel="noopener"><span><span class="lbl">Kaggle</span><span class="val2">busraercan</span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Büşra Ercan · İzmir</span>
+    <span class="tr">Grafiklerdeki bütün sayılar kendi projelerimin doğrulama sonuçlarından.</span>
+    <span class="en">Every number in these charts comes from my own projects' validation results.</span>
+  </div>
+</footer>
+
+<div id="tip" role="status" aria-live="polite"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
