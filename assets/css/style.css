@@ -369,3 +369,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
   .cta{flex-direction:column;align-items:stretch}
   .cta-actions .btn{flex:1 1 auto;text-align:center}
 }
+
+/* ---------- iletişim künyesi ---------- */
+.facts{margin:0 0 6px;border-top:1px solid var(--line-2)}
+.facts > div{
+  display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
+  padding:10px 0;border-bottom:1px solid var(--line-2);
+}
+.facts dt{
+  flex:0 0 130px;font-family:var(--mono);font-size:.74rem;
+  color:var(--ink-3);letter-spacing:.02em;
+}
+.facts dd{margin:0;flex:1 1 200px;font-size:1rem;color:var(--ink)}
+@media (max-width:520px){.facts dt{flex-basis:100%}}
