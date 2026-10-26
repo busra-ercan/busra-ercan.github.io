@@ -133,7 +133,7 @@
     <div class="rail">
       <div class="sheet">01</div>
       <h2><span class="tr">Projeler</span><span class="en">Projects</span></h2>
-      <p class="note"><span class="tr">Altı proje, uçtan uca. Her biri gerçek veriyle, kendi yazdığım fonksiyonlarla ve ölçülmüş sonuçlarla.</span><span class="en">Six projects, end to end. Real data, functions I wrote myself, measured results.</span></p>
+      <p class="note"><span class="tr">Altı kişisel proje ve bir ekip projesi. Her biri gerçek veriyle, kendi yazdığım fonksiyonlarla ve ölçülmüş sonuçlarla.</span><span class="en">Six solo projects and one team project. Real data, functions I wrote myself, measured results.</span></p>
     </div>
 
     <div>
@@ -489,6 +489,72 @@
       </div>
     </article>
 
+
+    <!-- ---------- P-07 ---------- -->
+    <article class="project">
+      <div class="project-head">
+        <span class="ref">P-07</span>
+        <h3>Data-Insight Agent</h3>
+        <span class="domain tr">ekip projeçesi · 5 kişi · Ocak 2026</span><span class="domain en">team project · 5 people · January 2026</span>
+      </div>
+      <p class="muted small" style="max-width:66ch">
+        <span class="tr">CSV yükleyince otomatik keşifsel analiz yapıp yapılandırılmış bir Markdown raporu üreten yapay zekâ destekli analiz aracı. Beş kişilik ekiple, gerçek bir Git akışı içinde geliştirildi.</span>
+        <span class="en">An AI-assisted analysis tool: upload a CSV and get a full exploratory analysis plus a structured Markdown report. Built by a team of five through a real Git workflow.</span>
+      </p>
+
+      <div class="metrics">
+        <div><div class="v">2</div><div class="k"><span class="tr">modül yazdım</span><span class="en">modules I wrote</span></div></div>
+        <div><div class="v">485</div><div class="k"><span class="tr">satır katkı</span><span class="en">lines contributed</span></div></div>
+        <div><div class="v">5</div><div class="k"><span class="tr">kişilik ekip</span><span class="en">person team</span></div></div>
+        <div><div class="v">PR #5</div><div class="k"><span class="tr">incelendi ve merge edildi</span><span class="en">reviewed and merged</span></div></div>
+      </div>
+
+      <div class="pgrid">
+        <div>
+          <h4><span class="tr">Benim yazdıklarım</span><span class="en">What I wrote</span></h4>
+          <ul class="did">
+            <li><span class="num">check_missing</span> — <span class="tr">eşik tabanlı uyarılarla eksik veri analizi; oran belirlenen sınırı geçince rapor uyarı üretiyor.</span><span class="en">missing-value analysis with threshold-based warnings; the report flags a column once its missing rate crosses the limit.</span></li>
+            <li><span class="num">find_correlations</span> — <span class="tr">korelasyon matrisi ve eşik üstü güçlü çiftlerin çıkarımı, yönü ve şiddetiyle etiketlenmiş olarak.</span><span class="en">correlation matrix plus extraction of strong pairs above a threshold, labelled by direction and strength.</span></li>
+            <li><span class="num">detect_outliers</span> — <span class="tr">IQR tabanlı aykırı değer tespiti.</span><span class="en">IQR-based outlier detection.</span></li>
+            <li><span class="num">generate_summary</span> — <span class="tr">modüler bölümlerden (genel bakış, istatistik, veri kalitesi, korelasyon, sonuç) otomatik Markdown rapor üretimi.</span><span class="en">automated Markdown report generation from modular sections: overview, statistics, data quality, correlations, conclusion.</span></li>
+            <li><span class="tr">Eşik değerlerini kodun içine gömmek yerine <span class="num">config</span>'ten okuttum — ekipteki başkası ayırı bir veri setiyle çalışırken kodu değiştirmek zorunda kalmasın diye.</span><span class="en">Read thresholds from <span class="num">config</span> instead of hard-coding them, so a teammate working on a different dataset would not have to edit the code.</span></li>
+            <li><span class="tr">Teknik dokümantasyonu ayrı bir PR olarak açtım: <span class="num">docs/analysis-tools.md</span>.</span><span class="en">Opened the technical documentation as its own pull request: <span class="num">docs/analysis-tools.md</span>.</span></li>
+          </ul>
+          <div class="stack"><span>Python</span><span>pandas</span><span>NumPy</span><span>Git</span><span>GitHub</span><span class="tr">tip ipuçları</span><span class="en">type hints</span></div>
+          <div class="links">
+            <a href="https://github.com/mmehmetisik/data-insight-agent/pull/5" target="_blank" rel="noopener"><span class="tr">Merge edilen PR #5 ↗</span><span class="en">Merged PR #5 ↗</span></a>
+            <a href="https://github.com/mmehmetisik/data-insight-agent" target="_blank" rel="noopener"><span class="tr">Proje deposu ↗</span><span class="en">Project repository ↗</span></a>
+          </div>
+        </div>
+
+        <figure class="chart">
+          <div class="chart-title"><span class="tr">Çalışma akışı</span><span class="en">How the work flowed</span></div>
+          <div class="chart-sub"><span class="tr">Kendi dalımda geliştirip inceleme sürecinden geçirdim — doğrudan ana dala yazmadım.</span><span class="en">Developed on my own branch and went through review — never straight onto main.</span></div>
+          <svg viewBox="0 0 430 175" class="hit">
+            <path d="M90,124 C122,124 122,62 154,62 H296 C328,62 328,124 360,124" fill="none" stroke="var(--c1)" stroke-width="2"/>
+            <line x1="30" y1="124" x2="400" y2="124" stroke="var(--ink-3)" stroke-width="2"/>
+            <g fill="var(--surface)" stroke="var(--ink-3)" stroke-width="2.4">
+              <circle cx="50" cy="124" r="5"/><circle cx="90" cy="124" r="5"/><circle cx="394" cy="124" r="5"/>
+            </g>
+            <g fill="var(--c1)" stroke="var(--surface)" stroke-width="2">
+              <circle cx="186" cy="62" r="6" data-tip="tools/analysis.py — +176 satır" data-tip-en="tools/analysis.py — +176 lines"/>
+              <circle cx="240" cy="62" r="6" data-tip="tools/reporter.py — +309 satır" data-tip-en="tools/reporter.py — +309 lines"/>
+            </g>
+            <circle cx="360" cy="124" r="7" fill="var(--signal)" stroke="var(--surface)" stroke-width="2.4" data-tip="PR #5 incelendi ve ana dala merge edildi" data-tip-en="PR #5 reviewed and merged into main"/>
+            <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-3)">
+              <text x="30" y="148">main</text>
+              <text x="154" y="42" fill="var(--c1)">feature/analysis-tools</text>
+            </g>
+            <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--signal)" text-anchor="end">
+              <text x="404" y="150" class="tr">PR #5 · inceleme → merge</text>
+              <text x="404" y="150" class="en">PR #5 · review → merge</text>
+            </g>
+          </svg>
+          <figcaption><span class="tr">Ekip projesinde teknik kısım işin yarısı. Diğer yarısı, başkasının okuyup inceleyebileceği şekilde yazmak: küçük ve açıklanmış commit'ler, ayrı dal, dokümantasyon. İki PR açtım; ilki incelendikten sonra ana dala alındı.</span><span class="en">On a team project the technical part is half the job. The other half is writing so someone else can read and review it: small explained commits, a separate branch, documentation. I opened two pull requests; the first was merged after review.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
     <!-- ---------- tüm notebook dizini ---------- -->
     <div style="margin-top:46px">
       <h4 style="margin-bottom:4px"><span class="tr">Kaggle'daki tüm notebook'lar</span><span class="en">Every notebook on Kaggle</span></h4>
@@ -555,8 +621,8 @@
         </div>
         <div>
           <h4><span class="tr">Mühendislik pratiği</span><span class="en">Engineering practice</span></h4>
-          <div class="ev"><span class="tr">On yıllık mühendislik alışkanlıkları: ölçmeden iddia etmemek, kök nedene inmek, yaptığını belgelemek. Veri biliminde de işin yarısı bu.</span><span class="en">Ten years of engineering habits: no claim without a measurement, trace it to root cause, document what you did. Half the job in data science is the same.</span></div>
-          <ul><li>Git</li><li>GitHub</li><li>Jupyter</li><li>PyCharm</li><li>RCA · 8D</li><li>FMEA</li><li class="tr">kök neden analizi</li><li class="en">root cause analysis</li></ul>
+          <div class="ev"><span class="tr">On yıllık mühendislik alışkanlıkları: ölçmeden iddia etmemek, kök nedene inmek, yaptığını belgelemek. Git tarafında ayrı dal, pull request ve kod incelemesiyle çalışıyorum — P-07'de beş kişilik ekiple böyle yürüdü.</span><span class="en">Ten years of engineering habits: no claim without a measurement, trace it to root cause, document what you did. On Git I work with branches, pull requests and code review — that is how P-07 ran with a team of five.</span></div>
+          <ul><li>Git</li><li>GitHub</li><li class="tr">dal · PR · inceleme</li><li class="en">branch · PR · review</li><li>Jupyter</li><li>PyCharm</li><li>RCA · 8D</li><li>FMEA</li><li class="tr">kök neden analizi</li><li class="en">root cause analysis</li></ul>
         </div>
       </div>
     </div>
